@@ -1,0 +1,3745 @@
+{
+  "store": "HIMAANIX",
+  "currency": "INR",
+  "totalProducts": 140,
+  "products": [
+    {
+      "id": 1001,
+      "name": "Classic Oversized T-Shirt",
+      "category": "T-Shirts",
+      "price": 999,
+      "oldPrice": 1499,
+      "discount": 33,
+      "rating": 4.3,
+      "reviews": 138,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Beige",
+        "Black",
+        "Olive"
+      ],
+      "stock": 25,
+      "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium t-shirts designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "classic-oversized-t-shirt",
+      "isFeatured": true,
+      "isNew": false
+    },
+    {
+      "id": 1002,
+      "name": "Premium Cotton T-Shirt",
+      "category": "T-Shirts",
+      "price": 1099,
+      "oldPrice": 1599,
+      "discount": 31,
+      "rating": 4.4,
+      "reviews": 39,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Beige",
+        "Black",
+        "Olive"
+      ],
+      "stock": 19,
+      "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium t-shirts designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "premium-cotton-t-shirt",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1003,
+      "name": "Minimal Logo T-Shirt",
+      "category": "T-Shirts",
+      "price": 899,
+      "oldPrice": 1299,
+      "discount": 31,
+      "rating": 4.3,
+      "reviews": 356,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "White",
+        "Beige",
+        "Black"
+      ],
+      "stock": 61,
+      "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium t-shirts designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "minimal-logo-t-shirt",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1004,
+      "name": "Heavyweight Street T-Shirt",
+      "category": "T-Shirts",
+      "price": 1299,
+      "oldPrice": 1799,
+      "discount": 28,
+      "rating": 4.7,
+      "reviews": 105,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "White",
+        "Navy",
+        "Charcoal"
+      ],
+      "stock": 62,
+      "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium t-shirts designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "heavyweight-street-t-shirt",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1005,
+      "name": "Relaxed Fit T-Shirt",
+      "category": "T-Shirts",
+      "price": 949,
+      "oldPrice": 1399,
+      "discount": 32,
+      "rating": 4.9,
+      "reviews": 196,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Charcoal",
+        "Beige",
+        "White"
+      ],
+      "stock": 21,
+      "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium t-shirts designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "relaxed-fit-t-shirt",
+      "isFeatured": false,
+      "isNew": true
+    },
+    {
+      "id": 1006,
+      "name": "Essential Crew Neck T-Shirt",
+      "category": "T-Shirts",
+      "price": 799,
+      "oldPrice": 1199,
+      "discount": 33,
+      "rating": 4.8,
+      "reviews": 333,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Black",
+        "Navy",
+        "Beige"
+      ],
+      "stock": 41,
+      "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium t-shirts designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "essential-crew-neck-t-shirt",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1007,
+      "name": "Vintage Wash T-Shirt",
+      "category": "T-Shirts",
+      "price": 1199,
+      "oldPrice": 1699,
+      "discount": 29,
+      "rating": 4.2,
+      "reviews": 174,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Black",
+        "Navy",
+        "Beige"
+      ],
+      "stock": 54,
+      "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium t-shirts designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "vintage-wash-t-shirt",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1008,
+      "name": "Graphic Print T-Shirt",
+      "category": "T-Shirts",
+      "price": 999,
+      "oldPrice": 1499,
+      "discount": 33,
+      "rating": 4.6,
+      "reviews": 419,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Olive",
+        "White",
+        "Black"
+      ],
+      "stock": 45,
+      "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium t-shirts designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "graphic-print-t-shirt",
+      "isFeatured": true,
+      "isNew": false
+    },
+    {
+      "id": 1009,
+      "name": "Drop Shoulder T-Shirt",
+      "category": "T-Shirts",
+      "price": 1099,
+      "oldPrice": 1599,
+      "discount": 31,
+      "rating": 4.3,
+      "reviews": 349,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Black",
+        "White",
+        "Beige"
+      ],
+      "stock": 54,
+      "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium t-shirts designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "drop-shoulder-t-shirt",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1010,
+      "name": "Premium Boxy T-Shirt",
+      "category": "T-Shirts",
+      "price": 1299,
+      "oldPrice": 1899,
+      "discount": 32,
+      "rating": 4.6,
+      "reviews": 383,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "White",
+        "Charcoal",
+        "Olive"
+      ],
+      "stock": 17,
+      "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium t-shirts designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "premium-boxy-t-shirt",
+      "isFeatured": false,
+      "isNew": true
+    },
+    {
+      "id": 1011,
+      "name": "Minimal Linen Shirt",
+      "category": "Shirts",
+      "price": 1399,
+      "oldPrice": 1799,
+      "discount": 22,
+      "rating": 4.5,
+      "reviews": 162,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Beige",
+        "Sky Blue",
+        "Brown"
+      ],
+      "stock": 36,
+      "image": "https://images.unsplash.com/photo-1603252110481-7ba873bf42ab?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium shirts designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "minimal-linen-shirt",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1012,
+      "name": "Relaxed Oxford Shirt",
+      "category": "Shirts",
+      "price": 1499,
+      "oldPrice": 1999,
+      "discount": 25,
+      "rating": 4.8,
+      "reviews": 436,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Brown",
+        "Black",
+        "White"
+      ],
+      "stock": 48,
+      "image": "https://images.unsplash.com/photo-1603252110481-7ba873bf42ab?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium shirts designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "relaxed-oxford-shirt",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1013,
+      "name": "Classic Casual Shirt",
+      "category": "Shirts",
+      "price": 1299,
+      "oldPrice": 1799,
+      "discount": 28,
+      "rating": 4.8,
+      "reviews": 314,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Olive",
+        "Black",
+        "White"
+      ],
+      "stock": 48,
+      "image": "https://images.unsplash.com/photo-1603252110481-7ba873bf42ab?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium shirts designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "classic-casual-shirt",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1014,
+      "name": "Oversized Flannel Shirt",
+      "category": "Shirts",
+      "price": 1599,
+      "oldPrice": 2199,
+      "discount": 27,
+      "rating": 4.5,
+      "reviews": 159,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Sky Blue",
+        "Olive",
+        "Beige"
+      ],
+      "stock": 25,
+      "image": "https://images.unsplash.com/photo-1603252110481-7ba873bf42ab?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium shirts designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "oversized-flannel-shirt",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1015,
+      "name": "Textured Resort Shirt",
+      "category": "Shirts",
+      "price": 1499,
+      "oldPrice": 1999,
+      "discount": 25,
+      "rating": 4.6,
+      "reviews": 483,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Sky Blue",
+        "Beige",
+        "Black"
+      ],
+      "stock": 59,
+      "image": "https://images.unsplash.com/photo-1603252110481-7ba873bf42ab?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium shirts designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "textured-resort-shirt",
+      "isFeatured": true,
+      "isNew": true
+    },
+    {
+      "id": 1016,
+      "name": "Premium Poplin Shirt",
+      "category": "Shirts",
+      "price": 1699,
+      "oldPrice": 2299,
+      "discount": 26,
+      "rating": 4.5,
+      "reviews": 410,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Black",
+        "Sky Blue",
+        "Beige"
+      ],
+      "stock": 14,
+      "image": "https://images.unsplash.com/photo-1603252110481-7ba873bf42ab?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium shirts designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "premium-poplin-shirt",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1017,
+      "name": "Striped Casual Shirt",
+      "category": "Shirts",
+      "price": 1399,
+      "oldPrice": 1899,
+      "discount": 26,
+      "rating": 4.4,
+      "reviews": 56,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "White",
+        "Sky Blue",
+        "Beige"
+      ],
+      "stock": 57,
+      "image": "https://images.unsplash.com/photo-1603252110481-7ba873bf42ab?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium shirts designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "striped-casual-shirt",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1018,
+      "name": "Denim Overshirt",
+      "category": "Shirts",
+      "price": 1799,
+      "oldPrice": 2499,
+      "discount": 28,
+      "rating": 4.3,
+      "reviews": 307,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Olive",
+        "Beige",
+        "Brown"
+      ],
+      "stock": 9,
+      "image": "https://images.unsplash.com/photo-1603252110481-7ba873bf42ab?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium shirts designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "denim-overshirt",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1019,
+      "name": "Corduroy Shirt",
+      "category": "Shirts",
+      "price": 1699,
+      "oldPrice": 2299,
+      "discount": 26,
+      "rating": 4.4,
+      "reviews": 174,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Brown",
+        "White",
+        "Black"
+      ],
+      "stock": 63,
+      "image": "https://images.unsplash.com/photo-1603252110481-7ba873bf42ab?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium shirts designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "corduroy-shirt",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1020,
+      "name": "Utility Pocket Shirt",
+      "category": "Shirts",
+      "price": 1599,
+      "oldPrice": 2199,
+      "discount": 27,
+      "rating": 4.8,
+      "reviews": 158,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Sky Blue",
+        "Olive",
+        "White"
+      ],
+      "stock": 72,
+      "image": "https://images.unsplash.com/photo-1603252110481-7ba873bf42ab?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium shirts designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "utility-pocket-shirt",
+      "isFeatured": false,
+      "isNew": true
+    },
+    {
+      "id": 1021,
+      "name": "Premium Cotton Hoodie",
+      "category": "Hoodies",
+      "price": 1899,
+      "oldPrice": 2499,
+      "discount": 24,
+      "rating": 4.3,
+      "reviews": 351,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Charcoal",
+        "Olive",
+        "Black"
+      ],
+      "stock": 72,
+      "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium hoodies designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "premium-cotton-hoodie",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1022,
+      "name": "Oversized Pullover Hoodie",
+      "category": "Hoodies",
+      "price": 1999,
+      "oldPrice": 2799,
+      "discount": 29,
+      "rating": 4.7,
+      "reviews": 300,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Olive",
+        "Charcoal",
+        "Cream"
+      ],
+      "stock": 75,
+      "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium hoodies designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "oversized-pullover-hoodie",
+      "isFeatured": true,
+      "isNew": false
+    },
+    {
+      "id": 1023,
+      "name": "Essential Fleece Hoodie",
+      "category": "Hoodies",
+      "price": 1799,
+      "oldPrice": 2399,
+      "discount": 25,
+      "rating": 4.1,
+      "reviews": 209,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Black",
+        "Olive",
+        "Grey"
+      ],
+      "stock": 47,
+      "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium hoodies designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "essential-fleece-hoodie",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1024,
+      "name": "Graphic Street Hoodie",
+      "category": "Hoodies",
+      "price": 2199,
+      "oldPrice": 2999,
+      "discount": 27,
+      "rating": 4.9,
+      "reviews": 67,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Charcoal",
+        "Black",
+        "Cream"
+      ],
+      "stock": 70,
+      "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium hoodies designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "graphic-street-hoodie",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1025,
+      "name": "Minimal Zip Hoodie",
+      "category": "Hoodies",
+      "price": 2099,
+      "oldPrice": 2899,
+      "discount": 28,
+      "rating": 4.6,
+      "reviews": 305,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Black",
+        "Olive",
+        "Charcoal"
+      ],
+      "stock": 29,
+      "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium hoodies designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "minimal-zip-hoodie",
+      "isFeatured": false,
+      "isNew": true
+    },
+    {
+      "id": 1026,
+      "name": "Heavyweight Hoodie",
+      "category": "Hoodies",
+      "price": 2299,
+      "oldPrice": 3199,
+      "discount": 28,
+      "rating": 4.8,
+      "reviews": 410,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Grey",
+        "Olive",
+        "Navy"
+      ],
+      "stock": 33,
+      "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium hoodies designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "heavyweight-hoodie",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1027,
+      "name": "Relaxed Fit Hoodie",
+      "category": "Hoodies",
+      "price": 1899,
+      "oldPrice": 2599,
+      "discount": 27,
+      "rating": 4.6,
+      "reviews": 248,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Cream",
+        "Grey",
+        "Navy"
+      ],
+      "stock": 74,
+      "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium hoodies designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "relaxed-fit-hoodie",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1028,
+      "name": "Logo Embroidered Hoodie",
+      "category": "Hoodies",
+      "price": 1999,
+      "oldPrice": 2799,
+      "discount": 29,
+      "rating": 4.2,
+      "reviews": 34,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Navy",
+        "Black",
+        "Charcoal"
+      ],
+      "stock": 37,
+      "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium hoodies designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "logo-embroidered-hoodie",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1029,
+      "name": "Washed Hoodie",
+      "category": "Hoodies",
+      "price": 2199,
+      "oldPrice": 2999,
+      "discount": 27,
+      "rating": 4.7,
+      "reviews": 54,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Olive",
+        "Charcoal",
+        "Black"
+      ],
+      "stock": 37,
+      "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium hoodies designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "washed-hoodie",
+      "isFeatured": true,
+      "isNew": false
+    },
+    {
+      "id": 1030,
+      "name": "Essential Everyday Hoodie",
+      "category": "Hoodies",
+      "price": 1799,
+      "oldPrice": 2399,
+      "discount": 25,
+      "rating": 4.5,
+      "reviews": 166,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Black",
+        "Cream",
+        "Grey"
+      ],
+      "stock": 70,
+      "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium hoodies designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "essential-everyday-hoodie",
+      "isFeatured": false,
+      "isNew": true
+    },
+    {
+      "id": 1031,
+      "name": "Essential Sweatshirt",
+      "category": "Sweatshirts",
+      "price": 1499,
+      "oldPrice": 1999,
+      "discount": 25,
+      "rating": 4.8,
+      "reviews": 316,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Grey",
+        "Brown",
+        "Olive"
+      ],
+      "stock": 68,
+      "image": "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium sweatshirts designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "essential-sweatshirt",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1032,
+      "name": "Oversized Crew Sweatshirt",
+      "category": "Sweatshirts",
+      "price": 1599,
+      "oldPrice": 2199,
+      "discount": 27,
+      "rating": 4.2,
+      "reviews": 361,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Grey",
+        "Cream",
+        "Brown"
+      ],
+      "stock": 63,
+      "image": "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium sweatshirts designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "oversized-crew-sweatshirt",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1033,
+      "name": "Minimal Embroidered Sweatshirt",
+      "category": "Sweatshirts",
+      "price": 1699,
+      "oldPrice": 2299,
+      "discount": 26,
+      "rating": 4.8,
+      "reviews": 51,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Navy",
+        "Cream",
+        "Brown"
+      ],
+      "stock": 20,
+      "image": "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium sweatshirts designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "minimal-embroidered-sweatshirt",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1034,
+      "name": "Heavyweight Crew Sweatshirt",
+      "category": "Sweatshirts",
+      "price": 1799,
+      "oldPrice": 2399,
+      "discount": 25,
+      "rating": 4.3,
+      "reviews": 121,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Black",
+        "Cream",
+        "Navy"
+      ],
+      "stock": 65,
+      "image": "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium sweatshirts designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "heavyweight-crew-sweatshirt",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1035,
+      "name": "Vintage Wash Sweatshirt",
+      "category": "Sweatshirts",
+      "price": 1899,
+      "oldPrice": 2599,
+      "discount": 27,
+      "rating": 4.5,
+      "reviews": 471,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Grey",
+        "Cream",
+        "Olive"
+      ],
+      "stock": 17,
+      "image": "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium sweatshirts designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "vintage-wash-sweatshirt",
+      "isFeatured": false,
+      "isNew": true
+    },
+    {
+      "id": 1036,
+      "name": "Graphic Print Sweatshirt",
+      "category": "Sweatshirts",
+      "price": 1699,
+      "oldPrice": 2299,
+      "discount": 26,
+      "rating": 4.6,
+      "reviews": 300,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Cream",
+        "Brown",
+        "Black"
+      ],
+      "stock": 9,
+      "image": "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium sweatshirts designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "graphic-print-sweatshirt",
+      "isFeatured": true,
+      "isNew": false
+    },
+    {
+      "id": 1037,
+      "name": "Relaxed Fit Sweatshirt",
+      "category": "Sweatshirts",
+      "price": 1599,
+      "oldPrice": 2199,
+      "discount": 27,
+      "rating": 4.5,
+      "reviews": 133,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Black",
+        "Grey",
+        "Brown"
+      ],
+      "stock": 59,
+      "image": "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium sweatshirts designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "relaxed-fit-sweatshirt",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1038,
+      "name": "Premium Fleece Sweatshirt",
+      "category": "Sweatshirts",
+      "price": 1799,
+      "oldPrice": 2499,
+      "discount": 28,
+      "rating": 4.9,
+      "reviews": 159,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Black",
+        "Grey",
+        "Cream"
+      ],
+      "stock": 66,
+      "image": "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium sweatshirts designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "premium-fleece-sweatshirt",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1039,
+      "name": "Half Zip Sweatshirt",
+      "category": "Sweatshirts",
+      "price": 1899,
+      "oldPrice": 2599,
+      "discount": 27,
+      "rating": 4.3,
+      "reviews": 135,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Navy",
+        "Cream",
+        "Brown"
+      ],
+      "stock": 15,
+      "image": "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium sweatshirts designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "half-zip-sweatshirt",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1040,
+      "name": "Streetwear Crew Sweatshirt",
+      "category": "Sweatshirts",
+      "price": 1699,
+      "oldPrice": 2299,
+      "discount": 26,
+      "rating": 4.4,
+      "reviews": 49,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Brown",
+        "Olive",
+        "Black"
+      ],
+      "stock": 69,
+      "image": "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium sweatshirts designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "streetwear-crew-sweatshirt",
+      "isFeatured": false,
+      "isNew": true
+    },
+    {
+      "id": 1041,
+      "name": "Relaxed Straight Jeans",
+      "category": "Jeans",
+      "price": 1799,
+      "oldPrice": 2499,
+      "discount": 28,
+      "rating": 4.2,
+      "reviews": 119,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Grey",
+        "Mid Blue",
+        "Dark Blue"
+      ],
+      "stock": 16,
+      "image": "https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium jeans designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "relaxed-straight-jeans",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1042,
+      "name": "Classic Slim Jeans",
+      "category": "Jeans",
+      "price": 1699,
+      "oldPrice": 2299,
+      "discount": 26,
+      "rating": 4.4,
+      "reviews": 479,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Grey",
+        "Dark Blue",
+        "Light Blue"
+      ],
+      "stock": 39,
+      "image": "https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium jeans designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "classic-slim-jeans",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1043,
+      "name": "Wide Leg Denim Jeans",
+      "category": "Jeans",
+      "price": 1999,
+      "oldPrice": 2799,
+      "discount": 29,
+      "rating": 4.4,
+      "reviews": 322,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Grey",
+        "Dark Blue",
+        "Light Blue"
+      ],
+      "stock": 74,
+      "image": "https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium jeans designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "wide-leg-denim-jeans",
+      "isFeatured": true,
+      "isNew": false
+    },
+    {
+      "id": 1044,
+      "name": "Baggy Fit Jeans",
+      "category": "Jeans",
+      "price": 1899,
+      "oldPrice": 2599,
+      "discount": 27,
+      "rating": 4.7,
+      "reviews": 146,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Light Blue",
+        "Grey",
+        "Dark Blue"
+      ],
+      "stock": 41,
+      "image": "https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium jeans designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "baggy-fit-jeans",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1045,
+      "name": "Vintage Wash Jeans",
+      "category": "Jeans",
+      "price": 2099,
+      "oldPrice": 2899,
+      "discount": 28,
+      "rating": 4.3,
+      "reviews": 185,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Black",
+        "Mid Blue",
+        "Light Blue"
+      ],
+      "stock": 17,
+      "image": "https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium jeans designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "vintage-wash-jeans",
+      "isFeatured": false,
+      "isNew": true
+    },
+    {
+      "id": 1046,
+      "name": "Light Wash Straight Jeans",
+      "category": "Jeans",
+      "price": 1799,
+      "oldPrice": 2499,
+      "discount": 28,
+      "rating": 4.9,
+      "reviews": 61,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Dark Blue",
+        "Black",
+        "Light Blue"
+      ],
+      "stock": 35,
+      "image": "https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium jeans designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "light-wash-straight-jeans",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1047,
+      "name": "Dark Blue Regular Jeans",
+      "category": "Jeans",
+      "price": 1899,
+      "oldPrice": 2599,
+      "discount": 27,
+      "rating": 4.8,
+      "reviews": 474,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Grey",
+        "Light Blue",
+        "Dark Blue"
+      ],
+      "stock": 39,
+      "image": "https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium jeans designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "dark-blue-regular-jeans",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1048,
+      "name": "Black Relaxed Jeans",
+      "category": "Jeans",
+      "price": 1999,
+      "oldPrice": 2799,
+      "discount": 29,
+      "rating": 4.8,
+      "reviews": 384,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Light Blue",
+        "Grey",
+        "Dark Blue"
+      ],
+      "stock": 46,
+      "image": "https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium jeans designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "black-relaxed-jeans",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1049,
+      "name": "Cargo Denim Jeans",
+      "category": "Jeans",
+      "price": 2199,
+      "oldPrice": 2999,
+      "discount": 27,
+      "rating": 4.3,
+      "reviews": 363,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Grey",
+        "Dark Blue",
+        "Light Blue"
+      ],
+      "stock": 21,
+      "image": "https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium jeans designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "cargo-denim-jeans",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1050,
+      "name": "Stone Wash Denim",
+      "category": "Jeans",
+      "price": 2099,
+      "oldPrice": 2899,
+      "discount": 28,
+      "rating": 4.7,
+      "reviews": 103,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Mid Blue",
+        "Light Blue",
+        "Dark Blue"
+      ],
+      "stock": 42,
+      "image": "https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium jeans designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "stone-wash-denim",
+      "isFeatured": true,
+      "isNew": true
+    },
+    {
+      "id": 1051,
+      "name": "Wide Leg Trousers",
+      "category": "Trousers",
+      "price": 1799,
+      "oldPrice": 2299,
+      "discount": 22,
+      "rating": 4.4,
+      "reviews": 375,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Charcoal",
+        "Navy",
+        "Beige"
+      ],
+      "stock": 41,
+      "image": "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium trousers designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "wide-leg-trousers",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1052,
+      "name": "Relaxed Fit Trousers",
+      "category": "Trousers",
+      "price": 1699,
+      "oldPrice": 2199,
+      "discount": 23,
+      "rating": 4.2,
+      "reviews": 240,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Navy",
+        "Olive",
+        "Charcoal"
+      ],
+      "stock": 43,
+      "image": "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium trousers designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "relaxed-fit-trousers",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1053,
+      "name": "Classic Pleated Trousers",
+      "category": "Trousers",
+      "price": 1899,
+      "oldPrice": 2499,
+      "discount": 24,
+      "rating": 4.6,
+      "reviews": 158,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Black",
+        "Brown",
+        "Charcoal"
+      ],
+      "stock": 28,
+      "image": "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium trousers designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "classic-pleated-trousers",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1054,
+      "name": "Straight Fit Formal Trousers",
+      "category": "Trousers",
+      "price": 1599,
+      "oldPrice": 2199,
+      "discount": 27,
+      "rating": 4.1,
+      "reviews": 62,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Brown",
+        "Olive",
+        "Navy"
+      ],
+      "stock": 27,
+      "image": "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium trousers designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "straight-fit-formal-trousers",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1055,
+      "name": "Textured Relaxed Trousers",
+      "category": "Trousers",
+      "price": 1799,
+      "oldPrice": 2399,
+      "discount": 25,
+      "rating": 4.5,
+      "reviews": 244,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Navy",
+        "Black",
+        "Charcoal"
+      ],
+      "stock": 24,
+      "image": "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium trousers designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "textured-relaxed-trousers",
+      "isFeatured": false,
+      "isNew": true
+    },
+    {
+      "id": 1056,
+      "name": "Minimal Everyday Trousers",
+      "category": "Trousers",
+      "price": 1499,
+      "oldPrice": 1999,
+      "discount": 25,
+      "rating": 4.8,
+      "reviews": 131,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Black",
+        "Charcoal",
+        "Navy"
+      ],
+      "stock": 39,
+      "image": "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium trousers designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "minimal-everyday-trousers",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1057,
+      "name": "Premium Tailored Trousers",
+      "category": "Trousers",
+      "price": 2199,
+      "oldPrice": 2899,
+      "discount": 24,
+      "rating": 4.8,
+      "reviews": 232,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Brown",
+        "Black",
+        "Charcoal"
+      ],
+      "stock": 27,
+      "image": "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium trousers designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "premium-tailored-trousers",
+      "isFeatured": true,
+      "isNew": false
+    },
+    {
+      "id": 1058,
+      "name": "Loose Fit Trousers",
+      "category": "Trousers",
+      "price": 1699,
+      "oldPrice": 2299,
+      "discount": 26,
+      "rating": 4.1,
+      "reviews": 401,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Beige",
+        "Brown",
+        "Navy"
+      ],
+      "stock": 50,
+      "image": "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium trousers designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "loose-fit-trousers",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1059,
+      "name": "Utility Trousers",
+      "category": "Trousers",
+      "price": 1999,
+      "oldPrice": 2699,
+      "discount": 26,
+      "rating": 4.7,
+      "reviews": 79,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Olive",
+        "Beige",
+        "Charcoal"
+      ],
+      "stock": 56,
+      "image": "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium trousers designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "utility-trousers",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1060,
+      "name": "Smart Casual Trousers",
+      "category": "Trousers",
+      "price": 1799,
+      "oldPrice": 2399,
+      "discount": 25,
+      "rating": 4.8,
+      "reviews": 259,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Black",
+        "Olive",
+        "Beige"
+      ],
+      "stock": 52,
+      "image": "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium trousers designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "smart-casual-trousers",
+      "isFeatured": false,
+      "isNew": true
+    },
+    {
+      "id": 1061,
+      "name": "Relaxed Fit Cargo Pants",
+      "category": "Cargo Pants",
+      "price": 1599,
+      "oldPrice": 2199,
+      "discount": 27,
+      "rating": 4.6,
+      "reviews": 228,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Beige",
+        "Olive",
+        "Black"
+      ],
+      "stock": 50,
+      "image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium cargo pants designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "relaxed-fit-cargo-pants",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1062,
+      "name": "Utility Cargo Pants",
+      "category": "Cargo Pants",
+      "price": 1799,
+      "oldPrice": 2399,
+      "discount": 25,
+      "rating": 4.6,
+      "reviews": 228,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Beige",
+        "Black",
+        "Olive"
+      ],
+      "stock": 50,
+      "image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium cargo pants designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "utility-cargo-pants",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1063,
+      "name": "Wide Leg Cargo Pants",
+      "category": "Cargo Pants",
+      "price": 1899,
+      "oldPrice": 2599,
+      "discount": 27,
+      "rating": 4.6,
+      "reviews": 159,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Black",
+        "Khaki",
+        "Olive"
+      ],
+      "stock": 12,
+      "image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium cargo pants designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "wide-leg-cargo-pants",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1064,
+      "name": "Multi Pocket Cargo Pants",
+      "category": "Cargo Pants",
+      "price": 1999,
+      "oldPrice": 2699,
+      "discount": 26,
+      "rating": 4.7,
+      "reviews": 247,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Black",
+        "Charcoal",
+        "Olive"
+      ],
+      "stock": 73,
+      "image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium cargo pants designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "multi-pocket-cargo-pants",
+      "isFeatured": true,
+      "isNew": false
+    },
+    {
+      "id": 1065,
+      "name": "Street Cargo Pants",
+      "category": "Cargo Pants",
+      "price": 1699,
+      "oldPrice": 2299,
+      "discount": 26,
+      "rating": 4.3,
+      "reviews": 386,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Black",
+        "Charcoal",
+        "Beige"
+      ],
+      "stock": 63,
+      "image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium cargo pants designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "street-cargo-pants",
+      "isFeatured": false,
+      "isNew": true
+    },
+    {
+      "id": 1066,
+      "name": "Parachute Cargo Pants",
+      "category": "Cargo Pants",
+      "price": 1899,
+      "oldPrice": 2599,
+      "discount": 27,
+      "rating": 4.2,
+      "reviews": 364,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Black",
+        "Olive",
+        "Charcoal"
+      ],
+      "stock": 50,
+      "image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium cargo pants designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "parachute-cargo-pants",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1067,
+      "name": "Cotton Cargo Pants",
+      "category": "Cargo Pants",
+      "price": 1599,
+      "oldPrice": 2199,
+      "discount": 27,
+      "rating": 4.7,
+      "reviews": 177,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Khaki",
+        "Beige",
+        "Charcoal"
+      ],
+      "stock": 72,
+      "image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium cargo pants designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "cotton-cargo-pants",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1068,
+      "name": "Baggy Cargo Pants",
+      "category": "Cargo Pants",
+      "price": 1799,
+      "oldPrice": 2399,
+      "discount": 25,
+      "rating": 4.7,
+      "reviews": 307,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Beige",
+        "Charcoal",
+        "Olive"
+      ],
+      "stock": 24,
+      "image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium cargo pants designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "baggy-cargo-pants",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1069,
+      "name": "Technical Cargo Pants",
+      "category": "Cargo Pants",
+      "price": 2199,
+      "oldPrice": 2999,
+      "discount": 27,
+      "rating": 4.6,
+      "reviews": 486,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Olive",
+        "Charcoal",
+        "Beige"
+      ],
+      "stock": 30,
+      "image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium cargo pants designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "technical-cargo-pants",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1070,
+      "name": "Essential Cargo Pants",
+      "category": "Cargo Pants",
+      "price": 1699,
+      "oldPrice": 2299,
+      "discount": 26,
+      "rating": 4.8,
+      "reviews": 179,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Khaki",
+        "Beige",
+        "Olive"
+      ],
+      "stock": 44,
+      "image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium cargo pants designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "essential-cargo-pants",
+      "isFeatured": false,
+      "isNew": true
+    },
+    {
+      "id": 1071,
+      "name": "Relaxed Denim Jacket",
+      "category": "Jackets",
+      "price": 2299,
+      "oldPrice": 2999,
+      "discount": 23,
+      "rating": 4.5,
+      "reviews": 369,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Blue",
+        "Olive",
+        "Brown"
+      ],
+      "stock": 35,
+      "image": "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium jackets designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "relaxed-denim-jacket",
+      "isFeatured": true,
+      "isNew": false
+    },
+    {
+      "id": 1072,
+      "name": "Classic Bomber Jacket",
+      "category": "Jackets",
+      "price": 2499,
+      "oldPrice": 3299,
+      "discount": 24,
+      "rating": 4.2,
+      "reviews": 287,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Cream",
+        "Olive",
+        "Blue"
+      ],
+      "stock": 50,
+      "image": "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium jackets designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "classic-bomber-jacket",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1073,
+      "name": "Minimal Harrington Jacket",
+      "category": "Jackets",
+      "price": 2399,
+      "oldPrice": 3199,
+      "discount": 25,
+      "rating": 4.7,
+      "reviews": 99,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Black",
+        "Blue",
+        "Brown"
+      ],
+      "stock": 11,
+      "image": "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium jackets designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "minimal-harrington-jacket",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1074,
+      "name": "Oversized Varsity Jacket",
+      "category": "Jackets",
+      "price": 2799,
+      "oldPrice": 3799,
+      "discount": 26,
+      "rating": 4.8,
+      "reviews": 61,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Black",
+        "Blue",
+        "Olive"
+      ],
+      "stock": 66,
+      "image": "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium jackets designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "oversized-varsity-jacket",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1075,
+      "name": "Lightweight Utility Jacket",
+      "category": "Jackets",
+      "price": 2199,
+      "oldPrice": 2999,
+      "discount": 27,
+      "rating": 4.7,
+      "reviews": 277,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Olive",
+        "Cream",
+        "Blue"
+      ],
+      "stock": 59,
+      "image": "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium jackets designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "lightweight-utility-jacket",
+      "isFeatured": false,
+      "isNew": true
+    },
+    {
+      "id": 1076,
+      "name": "Vintage Denim Jacket",
+      "category": "Jackets",
+      "price": 2499,
+      "oldPrice": 3399,
+      "discount": 26,
+      "rating": 4.7,
+      "reviews": 136,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Blue",
+        "Charcoal",
+        "Black"
+      ],
+      "stock": 30,
+      "image": "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium jackets designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "vintage-denim-jacket",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1077,
+      "name": "Corduroy Jacket",
+      "category": "Jackets",
+      "price": 2599,
+      "oldPrice": 3499,
+      "discount": 26,
+      "rating": 4.5,
+      "reviews": 458,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Charcoal",
+        "Cream",
+        "Olive"
+      ],
+      "stock": 23,
+      "image": "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium jackets designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "corduroy-jacket",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1078,
+      "name": "Quilted Everyday Jacket",
+      "category": "Jackets",
+      "price": 2899,
+      "oldPrice": 3899,
+      "discount": 26,
+      "rating": 4.5,
+      "reviews": 310,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Olive",
+        "Blue",
+        "Charcoal"
+      ],
+      "stock": 48,
+      "image": "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium jackets designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "quilted-everyday-jacket",
+      "isFeatured": true,
+      "isNew": false
+    },
+    {
+      "id": 1079,
+      "name": "Streetwear Coach Jacket",
+      "category": "Jackets",
+      "price": 2399,
+      "oldPrice": 3199,
+      "discount": 25,
+      "rating": 4.5,
+      "reviews": 105,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Olive",
+        "Cream",
+        "Charcoal"
+      ],
+      "stock": 68,
+      "image": "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium jackets designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "streetwear-coach-jacket",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1080,
+      "name": "Premium Suede Look Jacket",
+      "category": "Jackets",
+      "price": 2999,
+      "oldPrice": 3999,
+      "discount": 25,
+      "rating": 4.3,
+      "reviews": 422,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Olive",
+        "Brown",
+        "Blue"
+      ],
+      "stock": 74,
+      "image": "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium jackets designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "premium-suede-look-jacket",
+      "isFeatured": false,
+      "isNew": true
+    },
+    {
+      "id": 1081,
+      "name": "Essential Polo T-Shirt",
+      "category": "Polos",
+      "price": 1199,
+      "oldPrice": 1599,
+      "discount": 25,
+      "rating": 4.2,
+      "reviews": 170,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Olive",
+        "White",
+        "Navy"
+      ],
+      "stock": 38,
+      "image": "https://images.unsplash.com/photo-1581655353564-df123a1eb820?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium polos designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "essential-polo-t-shirt",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1082,
+      "name": "Premium Pique Polo",
+      "category": "Polos",
+      "price": 1399,
+      "oldPrice": 1899,
+      "discount": 26,
+      "rating": 4.2,
+      "reviews": 101,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Navy",
+        "Beige",
+        "Maroon"
+      ],
+      "stock": 37,
+      "image": "https://images.unsplash.com/photo-1581655353564-df123a1eb820?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium polos designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "premium-pique-polo",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1083,
+      "name": "Relaxed Fit Polo",
+      "category": "Polos",
+      "price": 1299,
+      "oldPrice": 1799,
+      "discount": 28,
+      "rating": 4.4,
+      "reviews": 193,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Olive",
+        "White",
+        "Maroon"
+      ],
+      "stock": 67,
+      "image": "https://images.unsplash.com/photo-1581655353564-df123a1eb820?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium polos designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "relaxed-fit-polo",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1084,
+      "name": "Striped Polo T-Shirt",
+      "category": "Polos",
+      "price": 1299,
+      "oldPrice": 1799,
+      "discount": 28,
+      "rating": 4.4,
+      "reviews": 418,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Olive",
+        "Black",
+        "White"
+      ],
+      "stock": 10,
+      "image": "https://images.unsplash.com/photo-1581655353564-df123a1eb820?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium polos designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "striped-polo-t-shirt",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1085,
+      "name": "Minimal Collar Polo",
+      "category": "Polos",
+      "price": 1199,
+      "oldPrice": 1599,
+      "discount": 25,
+      "rating": 4.9,
+      "reviews": 176,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Maroon",
+        "Olive",
+        "Beige"
+      ],
+      "stock": 57,
+      "image": "https://images.unsplash.com/photo-1581655353564-df123a1eb820?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium polos designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "minimal-collar-polo",
+      "isFeatured": true,
+      "isNew": true
+    },
+    {
+      "id": 1086,
+      "name": "Textured Polo Shirt",
+      "category": "Polos",
+      "price": 1499,
+      "oldPrice": 1999,
+      "discount": 25,
+      "rating": 4.3,
+      "reviews": 247,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Olive",
+        "Maroon",
+        "White"
+      ],
+      "stock": 70,
+      "image": "https://images.unsplash.com/photo-1581655353564-df123a1eb820?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium polos designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "textured-polo-shirt",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1087,
+      "name": "Oversized Polo",
+      "category": "Polos",
+      "price": 1399,
+      "oldPrice": 1899,
+      "discount": 26,
+      "rating": 4.6,
+      "reviews": 231,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Black",
+        "Olive",
+        "Navy"
+      ],
+      "stock": 29,
+      "image": "https://images.unsplash.com/photo-1581655353564-df123a1eb820?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium polos designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "oversized-polo",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1088,
+      "name": "Classic Cotton Polo",
+      "category": "Polos",
+      "price": 1099,
+      "oldPrice": 1499,
+      "discount": 27,
+      "rating": 4.6,
+      "reviews": 363,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Olive",
+        "White",
+        "Black"
+      ],
+      "stock": 11,
+      "image": "https://images.unsplash.com/photo-1581655353564-df123a1eb820?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium polos designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "classic-cotton-polo",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1089,
+      "name": "Embroidered Polo",
+      "category": "Polos",
+      "price": 1499,
+      "oldPrice": 1999,
+      "discount": 25,
+      "rating": 4.2,
+      "reviews": 157,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Black",
+        "Olive",
+        "White"
+      ],
+      "stock": 56,
+      "image": "https://images.unsplash.com/photo-1581655353564-df123a1eb820?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium polos designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "embroidered-polo",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1090,
+      "name": "Premium Rib Polo",
+      "category": "Polos",
+      "price": 1599,
+      "oldPrice": 2199,
+      "discount": 27,
+      "rating": 4.4,
+      "reviews": 474,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Navy",
+        "White",
+        "Olive"
+      ],
+      "stock": 56,
+      "image": "https://images.unsplash.com/photo-1581655353564-df123a1eb820?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium polos designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "premium-rib-polo",
+      "isFeatured": false,
+      "isNew": true
+    },
+    {
+      "id": 1091,
+      "name": "Relaxed Cotton Shorts",
+      "category": "Shorts",
+      "price": 999,
+      "oldPrice": 1399,
+      "discount": 29,
+      "rating": 4.5,
+      "reviews": 407,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Olive",
+        "Navy",
+        "Stone"
+      ],
+      "stock": 14,
+      "image": "https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium shorts designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "relaxed-cotton-shorts",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1092,
+      "name": "Everyday Chino Shorts",
+      "category": "Shorts",
+      "price": 1099,
+      "oldPrice": 1499,
+      "discount": 27,
+      "rating": 4.1,
+      "reviews": 39,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Olive",
+        "Beige",
+        "Black"
+      ],
+      "stock": 39,
+      "image": "https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium shorts designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "everyday-chino-shorts",
+      "isFeatured": true,
+      "isNew": false
+    },
+    {
+      "id": 1093,
+      "name": "Utility Cargo Shorts",
+      "category": "Shorts",
+      "price": 1299,
+      "oldPrice": 1799,
+      "discount": 28,
+      "rating": 4.2,
+      "reviews": 366,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Beige",
+        "Black",
+        "Stone"
+      ],
+      "stock": 22,
+      "image": "https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium shorts designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "utility-cargo-shorts",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1094,
+      "name": "Relaxed Denim Shorts",
+      "category": "Shorts",
+      "price": 1199,
+      "oldPrice": 1699,
+      "discount": 29,
+      "rating": 4.3,
+      "reviews": 212,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Grey",
+        "Beige",
+        "Navy"
+      ],
+      "stock": 29,
+      "image": "https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium shorts designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "relaxed-denim-shorts",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1095,
+      "name": "French Terry Shorts",
+      "category": "Shorts",
+      "price": 1099,
+      "oldPrice": 1499,
+      "discount": 27,
+      "rating": 4.9,
+      "reviews": 79,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Grey",
+        "Stone",
+        "Black"
+      ],
+      "stock": 11,
+      "image": "https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium shorts designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "french-terry-shorts",
+      "isFeatured": false,
+      "isNew": true
+    },
+    {
+      "id": 1096,
+      "name": "Athletic Casual Shorts",
+      "category": "Shorts",
+      "price": 899,
+      "oldPrice": 1299,
+      "discount": 31,
+      "rating": 4.9,
+      "reviews": 125,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Olive",
+        "Grey",
+        "Navy"
+      ],
+      "stock": 17,
+      "image": "https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium shorts designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "athletic-casual-shorts",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1097,
+      "name": "Minimal Drawstring Shorts",
+      "category": "Shorts",
+      "price": 999,
+      "oldPrice": 1399,
+      "discount": 29,
+      "rating": 4.7,
+      "reviews": 459,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Grey",
+        "Beige",
+        "Black"
+      ],
+      "stock": 23,
+      "image": "https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium shorts designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "minimal-drawstring-shorts",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1098,
+      "name": "Wide Fit Shorts",
+      "category": "Shorts",
+      "price": 1099,
+      "oldPrice": 1499,
+      "discount": 27,
+      "rating": 4.4,
+      "reviews": 213,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Grey",
+        "Black",
+        "Olive"
+      ],
+      "stock": 16,
+      "image": "https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium shorts designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "wide-fit-shorts",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1099,
+      "name": "Textured Resort Shorts",
+      "category": "Shorts",
+      "price": 1199,
+      "oldPrice": 1599,
+      "discount": 25,
+      "rating": 4.8,
+      "reviews": 78,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Grey",
+        "Olive",
+        "Black"
+      ],
+      "stock": 63,
+      "image": "https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium shorts designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "textured-resort-shorts",
+      "isFeatured": true,
+      "isNew": false
+    },
+    {
+      "id": 1100,
+      "name": "Essential Lounge Shorts",
+      "category": "Shorts",
+      "price": 899,
+      "oldPrice": 1299,
+      "discount": 31,
+      "rating": 4.2,
+      "reviews": 291,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Olive",
+        "Navy",
+        "Beige"
+      ],
+      "stock": 42,
+      "image": "https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium shorts designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "essential-lounge-shorts",
+      "isFeatured": false,
+      "isNew": true
+    },
+    {
+      "id": 1101,
+      "name": "Premium Overshirt",
+      "category": "Overshirts",
+      "price": 1699,
+      "oldPrice": 2199,
+      "discount": 23,
+      "rating": 4.4,
+      "reviews": 398,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Navy",
+        "Grey",
+        "Brown"
+      ],
+      "stock": 42,
+      "image": "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium overshirts designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "premium-overshirt",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1102,
+      "name": "Heavy Cotton Overshirt",
+      "category": "Overshirts",
+      "price": 1899,
+      "oldPrice": 2499,
+      "discount": 24,
+      "rating": 4.8,
+      "reviews": 148,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Olive",
+        "Beige",
+        "Black"
+      ],
+      "stock": 67,
+      "image": "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium overshirts designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "heavy-cotton-overshirt",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1103,
+      "name": "Relaxed Flannel Overshirt",
+      "category": "Overshirts",
+      "price": 1799,
+      "oldPrice": 2399,
+      "discount": 25,
+      "rating": 4.1,
+      "reviews": 459,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Navy",
+        "Grey",
+        "Brown"
+      ],
+      "stock": 49,
+      "image": "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium overshirts designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "relaxed-flannel-overshirt",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1104,
+      "name": "Utility Overshirt",
+      "category": "Overshirts",
+      "price": 1999,
+      "oldPrice": 2699,
+      "discount": 26,
+      "rating": 4.7,
+      "reviews": 198,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Beige",
+        "Brown",
+        "Grey"
+      ],
+      "stock": 43,
+      "image": "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium overshirts designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "utility-overshirt",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1105,
+      "name": "Corduroy Overshirt",
+      "category": "Overshirts",
+      "price": 1899,
+      "oldPrice": 2499,
+      "discount": 24,
+      "rating": 4.9,
+      "reviews": 67,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Navy",
+        "Olive",
+        "Black"
+      ],
+      "stock": 38,
+      "image": "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium overshirts designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "corduroy-overshirt",
+      "isFeatured": false,
+      "isNew": true
+    },
+    {
+      "id": 1106,
+      "name": "Denim Overshirt",
+      "category": "Overshirts",
+      "price": 1999,
+      "oldPrice": 2699,
+      "discount": 26,
+      "rating": 4.7,
+      "reviews": 377,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Grey",
+        "Brown",
+        "Navy"
+      ],
+      "stock": 68,
+      "image": "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium overshirts designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "denim-overshirt",
+      "isFeatured": true,
+      "isNew": false
+    },
+    {
+      "id": 1107,
+      "name": "Minimal Twill Overshirt",
+      "category": "Overshirts",
+      "price": 1799,
+      "oldPrice": 2399,
+      "discount": 25,
+      "rating": 4.2,
+      "reviews": 137,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Grey",
+        "Brown",
+        "Navy"
+      ],
+      "stock": 59,
+      "image": "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium overshirts designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "minimal-twill-overshirt",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1108,
+      "name": "Boxy Fit Overshirt",
+      "category": "Overshirts",
+      "price": 1699,
+      "oldPrice": 2299,
+      "discount": 26,
+      "rating": 4.6,
+      "reviews": 266,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Grey",
+        "Beige",
+        "Olive"
+      ],
+      "stock": 75,
+      "image": "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium overshirts designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "boxy-fit-overshirt",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1109,
+      "name": "Textured Overshirt",
+      "category": "Overshirts",
+      "price": 1899,
+      "oldPrice": 2599,
+      "discount": 27,
+      "rating": 4.7,
+      "reviews": 162,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Olive",
+        "Brown",
+        "Grey"
+      ],
+      "stock": 47,
+      "image": "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium overshirts designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "textured-overshirt",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1110,
+      "name": "Street Utility Overshirt",
+      "category": "Overshirts",
+      "price": 2099,
+      "oldPrice": 2799,
+      "discount": 25,
+      "rating": 4.3,
+      "reviews": 85,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Olive",
+        "Beige",
+        "Black"
+      ],
+      "stock": 31,
+      "image": "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium overshirts designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "street-utility-overshirt",
+      "isFeatured": false,
+      "isNew": true
+    },
+    {
+      "id": 1111,
+      "name": "Classic Cotton Kurta",
+      "category": "Kurtas",
+      "price": 999,
+      "oldPrice": 1399,
+      "discount": 29,
+      "rating": 4.7,
+      "reviews": 413,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Black",
+        "Maroon",
+        "Olive"
+      ],
+      "stock": 75,
+      "image": "https://images.unsplash.com/photo-1597983073493-88cd35cf93d0?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium kurtas designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "classic-cotton-kurta",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1112,
+      "name": "Textured Short Kurta",
+      "category": "Kurtas",
+      "price": 1199,
+      "oldPrice": 1599,
+      "discount": 25,
+      "rating": 4.3,
+      "reviews": 208,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Navy",
+        "Beige",
+        "White"
+      ],
+      "stock": 30,
+      "image": "https://images.unsplash.com/photo-1597983073493-88cd35cf93d0?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium kurtas designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "textured-short-kurta",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1113,
+      "name": "Relaxed Linen Kurta",
+      "category": "Kurtas",
+      "price": 1499,
+      "oldPrice": 1999,
+      "discount": 25,
+      "rating": 4.1,
+      "reviews": 51,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Beige",
+        "White",
+        "Black"
+      ],
+      "stock": 45,
+      "image": "https://images.unsplash.com/photo-1597983073493-88cd35cf93d0?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium kurtas designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "relaxed-linen-kurta",
+      "isFeatured": true,
+      "isNew": false
+    },
+    {
+      "id": 1114,
+      "name": "Minimal Printed Kurta",
+      "category": "Kurtas",
+      "price": 1299,
+      "oldPrice": 1799,
+      "discount": 28,
+      "rating": 4.8,
+      "reviews": 317,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Maroon",
+        "Black",
+        "Olive"
+      ],
+      "stock": 44,
+      "image": "https://images.unsplash.com/photo-1597983073493-88cd35cf93d0?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium kurtas designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "minimal-printed-kurta",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1115,
+      "name": "Premium Solid Kurta",
+      "category": "Kurtas",
+      "price": 1399,
+      "oldPrice": 1899,
+      "discount": 26,
+      "rating": 4.2,
+      "reviews": 50,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Olive",
+        "Maroon",
+        "Navy"
+      ],
+      "stock": 40,
+      "image": "https://images.unsplash.com/photo-1597983073493-88cd35cf93d0?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium kurtas designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "premium-solid-kurta",
+      "isFeatured": false,
+      "isNew": true
+    },
+    {
+      "id": 1116,
+      "name": "Straight Fit Kurta",
+      "category": "Kurtas",
+      "price": 1199,
+      "oldPrice": 1699,
+      "discount": 29,
+      "rating": 4.5,
+      "reviews": 319,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Olive",
+        "White",
+        "Navy"
+      ],
+      "stock": 14,
+      "image": "https://images.unsplash.com/photo-1597983073493-88cd35cf93d0?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium kurtas designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "straight-fit-kurta",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1117,
+      "name": "Mandarin Collar Kurta",
+      "category": "Kurtas",
+      "price": 1299,
+      "oldPrice": 1799,
+      "discount": 28,
+      "rating": 4.9,
+      "reviews": 84,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Black",
+        "Maroon",
+        "Beige"
+      ],
+      "stock": 61,
+      "image": "https://images.unsplash.com/photo-1597983073493-88cd35cf93d0?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium kurtas designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "mandarin-collar-kurta",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1118,
+      "name": "Casual Festive Kurta",
+      "category": "Kurtas",
+      "price": 1599,
+      "oldPrice": 2199,
+      "discount": 27,
+      "rating": 4.4,
+      "reviews": 250,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Navy",
+        "Maroon",
+        "Black"
+      ],
+      "stock": 46,
+      "image": "https://images.unsplash.com/photo-1597983073493-88cd35cf93d0?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium kurtas designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "casual-festive-kurta",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1119,
+      "name": "Cotton Slub Kurta",
+      "category": "Kurtas",
+      "price": 1399,
+      "oldPrice": 1899,
+      "discount": 26,
+      "rating": 4.6,
+      "reviews": 336,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Navy",
+        "Olive",
+        "Beige"
+      ],
+      "stock": 20,
+      "image": "https://images.unsplash.com/photo-1597983073493-88cd35cf93d0?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium kurtas designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "cotton-slub-kurta",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1120,
+      "name": "Embroidered Minimal Kurta",
+      "category": "Kurtas",
+      "price": 1699,
+      "oldPrice": 2299,
+      "discount": 26,
+      "rating": 4.2,
+      "reviews": 146,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Black",
+        "Maroon",
+        "Beige"
+      ],
+      "stock": 30,
+      "image": "https://images.unsplash.com/photo-1597983073493-88cd35cf93d0?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium kurtas designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "embroidered-minimal-kurta",
+      "isFeatured": true,
+      "isNew": true
+    },
+    {
+      "id": 1121,
+      "name": "Relaxed Cotton Co-ord Set",
+      "category": "Co-ord Sets",
+      "price": 1999,
+      "oldPrice": 2799,
+      "discount": 29,
+      "rating": 4.4,
+      "reviews": 376,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Navy",
+        "Black",
+        "Beige"
+      ],
+      "stock": 68,
+      "image": "https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium co-ord sets designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "relaxed-cotton-co-ord-set",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1122,
+      "name": "Premium Resort Co-ord Set",
+      "category": "Co-ord Sets",
+      "price": 2299,
+      "oldPrice": 3199,
+      "discount": 28,
+      "rating": 4.7,
+      "reviews": 383,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Olive",
+        "Black",
+        "Beige"
+      ],
+      "stock": 66,
+      "image": "https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium co-ord sets designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "premium-resort-co-ord-set",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1123,
+      "name": "Oversized Street Co-ord Set",
+      "category": "Co-ord Sets",
+      "price": 2199,
+      "oldPrice": 2999,
+      "discount": 27,
+      "rating": 4.6,
+      "reviews": 435,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Black",
+        "Beige",
+        "Olive"
+      ],
+      "stock": 33,
+      "image": "https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium co-ord sets designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "oversized-street-co-ord-set",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1124,
+      "name": "Textured Casual Co-ord Set",
+      "category": "Co-ord Sets",
+      "price": 2099,
+      "oldPrice": 2899,
+      "discount": 28,
+      "rating": 4.2,
+      "reviews": 160,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Grey",
+        "Black",
+        "Beige"
+      ],
+      "stock": 26,
+      "image": "https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium co-ord sets designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "textured-casual-co-ord-set",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1125,
+      "name": "Minimal Summer Co-ord Set",
+      "category": "Co-ord Sets",
+      "price": 1899,
+      "oldPrice": 2599,
+      "discount": 27,
+      "rating": 4.6,
+      "reviews": 446,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Black",
+        "Brown",
+        "Beige"
+      ],
+      "stock": 44,
+      "image": "https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium co-ord sets designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "minimal-summer-co-ord-set",
+      "isFeatured": false,
+      "isNew": true
+    },
+    {
+      "id": 1126,
+      "name": "Linen Blend Co-ord Set",
+      "category": "Co-ord Sets",
+      "price": 2499,
+      "oldPrice": 3399,
+      "discount": 26,
+      "rating": 4.3,
+      "reviews": 230,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Grey",
+        "Black",
+        "Brown"
+      ],
+      "stock": 42,
+      "image": "https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium co-ord sets designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "linen-blend-co-ord-set",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1127,
+      "name": "Utility Co-ord Set",
+      "category": "Co-ord Sets",
+      "price": 2399,
+      "oldPrice": 3299,
+      "discount": 27,
+      "rating": 4.2,
+      "reviews": 44,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "Navy",
+        "Brown",
+        "Grey"
+      ],
+      "stock": 63,
+      "image": "https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium co-ord sets designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "utility-co-ord-set",
+      "isFeatured": true,
+      "isNew": false
+    },
+    {
+      "id": 1128,
+      "name": "Graphic Co-ord Set",
+      "category": "Co-ord Sets",
+      "price": 2299,
+      "oldPrice": 3199,
+      "discount": 28,
+      "rating": 4.2,
+      "reviews": 369,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Brown",
+        "Olive",
+        "Navy"
+      ],
+      "stock": 10,
+      "image": "https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium co-ord sets designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "graphic-co-ord-set",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1129,
+      "name": "Relaxed Lounge Co-ord Set",
+      "category": "Co-ord Sets",
+      "price": 1799,
+      "oldPrice": 2499,
+      "discount": 28,
+      "rating": 4.5,
+      "reviews": 357,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Brown",
+        "Olive",
+        "Black"
+      ],
+      "stock": 64,
+      "image": "https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium co-ord sets designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "relaxed-lounge-co-ord-set",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1130,
+      "name": "Premium Everyday Co-ord Set",
+      "category": "Co-ord Sets",
+      "price": 2199,
+      "oldPrice": 2999,
+      "discount": 27,
+      "rating": 4.8,
+      "reviews": 70,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Olive",
+        "Beige",
+        "Grey"
+      ],
+      "stock": 68,
+      "image": "https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium co-ord sets designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "premium-everyday-co-ord-set",
+      "isFeatured": false,
+      "isNew": true
+    },
+    {
+      "id": 1131,
+      "name": "Classic Canvas Cap",
+      "category": "Accessories",
+      "price": 599,
+      "oldPrice": 899,
+      "discount": 33,
+      "rating": 4.4,
+      "reviews": 77,
+      "sizes": [
+        "Free Size"
+      ],
+      "colors": [
+        "Brown",
+        "Olive",
+        "Beige"
+      ],
+      "stock": 28,
+      "image": "https://images.unsplash.com/photo-1521369909029-2afed882baee?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium accessories designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "classic-canvas-cap",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1132,
+      "name": "Minimal Dad Cap",
+      "category": "Accessories",
+      "price": 649,
+      "oldPrice": 999,
+      "discount": 35,
+      "rating": 4.5,
+      "reviews": 363,
+      "sizes": [
+        "Free Size"
+      ],
+      "colors": [
+        "Brown",
+        "Olive",
+        "Navy"
+      ],
+      "stock": 59,
+      "image": "https://images.unsplash.com/photo-1521369909029-2afed882baee?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium accessories designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "minimal-dad-cap",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1133,
+      "name": "Structured Street Cap",
+      "category": "Accessories",
+      "price": 699,
+      "oldPrice": 999,
+      "discount": 30,
+      "rating": 4.2,
+      "reviews": 153,
+      "sizes": [
+        "Free Size"
+      ],
+      "colors": [
+        "Navy",
+        "Black",
+        "Beige"
+      ],
+      "stock": 49,
+      "image": "https://images.unsplash.com/photo-1521369909029-2afed882baee?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium accessories designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "structured-street-cap",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1134,
+      "name": "Premium Rib Beanie",
+      "category": "Accessories",
+      "price": 599,
+      "oldPrice": 899,
+      "discount": 33,
+      "rating": 4.8,
+      "reviews": 24,
+      "sizes": [
+        "Free Size"
+      ],
+      "colors": [
+        "Black",
+        "Olive",
+        "Brown"
+      ],
+      "stock": 67,
+      "image": "https://images.unsplash.com/photo-1521369909029-2afed882baee?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium accessories designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "premium-rib-beanie",
+      "isFeatured": true,
+      "isNew": false
+    },
+    {
+      "id": 1135,
+      "name": "Everyday Cotton Belt",
+      "category": "Accessories",
+      "price": 699,
+      "oldPrice": 999,
+      "discount": 30,
+      "rating": 4.5,
+      "reviews": 342,
+      "sizes": [
+        "Free Size"
+      ],
+      "colors": [
+        "Olive",
+        "Black",
+        "Navy"
+      ],
+      "stock": 71,
+      "image": "https://images.unsplash.com/photo-1521369909029-2afed882baee?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium accessories designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "everyday-cotton-belt",
+      "isFeatured": false,
+      "isNew": true
+    },
+    {
+      "id": 1136,
+      "name": "Minimal Leather Look Belt",
+      "category": "Accessories",
+      "price": 799,
+      "oldPrice": 1199,
+      "discount": 33,
+      "rating": 4.3,
+      "reviews": 91,
+      "sizes": [
+        "Free Size"
+      ],
+      "colors": [
+        "Olive",
+        "Black",
+        "Navy"
+      ],
+      "stock": 44,
+      "image": "https://images.unsplash.com/photo-1521369909029-2afed882baee?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium accessories designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "minimal-leather-look-belt",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1137,
+      "name": "Canvas Tote Bag",
+      "category": "Accessories",
+      "price": 799,
+      "oldPrice": 1199,
+      "discount": 33,
+      "rating": 4.1,
+      "reviews": 346,
+      "sizes": [
+        "Free Size"
+      ],
+      "colors": [
+        "Olive",
+        "Navy",
+        "Black"
+      ],
+      "stock": 38,
+      "image": "https://images.unsplash.com/photo-1521369909029-2afed882baee?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium accessories designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "canvas-tote-bag",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1138,
+      "name": "Premium Everyday Tote",
+      "category": "Accessories",
+      "price": 999,
+      "oldPrice": 1499,
+      "discount": 33,
+      "rating": 4.1,
+      "reviews": 232,
+      "sizes": [
+        "Free Size"
+      ],
+      "colors": [
+        "Beige",
+        "Brown",
+        "Olive"
+      ],
+      "stock": 19,
+      "image": "https://images.unsplash.com/photo-1521369909029-2afed882baee?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium accessories designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "premium-everyday-tote",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1139,
+      "name": "Streetwear Crossbody Bag",
+      "category": "Accessories",
+      "price": 1099,
+      "oldPrice": 1599,
+      "discount": 31,
+      "rating": 4.9,
+      "reviews": 355,
+      "sizes": [
+        "Free Size"
+      ],
+      "colors": [
+        "Beige",
+        "Black",
+        "Navy"
+      ],
+      "stock": 27,
+      "image": "https://images.unsplash.com/photo-1521369909029-2afed882baee?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium accessories designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "streetwear-crossbody-bag",
+      "isFeatured": false,
+      "isNew": false
+    },
+    {
+      "id": 1140,
+      "name": "Minimal Sling Bag",
+      "category": "Accessories",
+      "price": 999,
+      "oldPrice": 1499,
+      "discount": 33,
+      "rating": 4.7,
+      "reviews": 236,
+      "sizes": [
+        "Free Size"
+      ],
+      "colors": [
+        "Olive",
+        "Brown",
+        "Navy"
+      ],
+      "stock": 69,
+      "image": "https://images.unsplash.com/photo-1521369909029-2afed882baee?auto=format&fit=crop&w=800&q=80",
+      "description": "Premium accessories designed for a clean, modern everyday wardrobe. Comfortable fit, quality fabric and versatile styling for the HIMAANIX collection.",
+      "slug": "minimal-sling-bag",
+      "isFeatured": false,
+      "isNew": true
+    }
+  ]
+}

@@ -1,0 +1,976 @@
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.navbar {
+    width: calc(100% - 40px);
+    max-width: 1500px;
+
+    margin: 14px auto;
+    padding: 10px 28px;
+
+    min-height: 78px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #ffffff;
+
+    border: 1px solid #eeeeee;
+    border-radius: 18px;
+
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.06);
+
+    position: relative;
+    z-index: 100;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+
+    flex-shrink: 0;
+
+    text-decoration: none;
+
+    transition: transform 0.3s ease;
+}
+
+.nav-logo img {
+    width: 82px;
+    height: auto;
+
+    display: block;
+
+    object-fit: contain;
+
+    transition: transform 0.3s ease;
+}
+
+.nav-logo:hover {
+    transform: translateY(-2px);
+}
+
+.nav-logo:hover img {
+    transform: scale(1.05);
+}
+
+
+/* =========================================================
+   OLD LOGO TEXT - IF USED SOMEWHERE
+========================================================= */
+
+.nav-logo p {
+    color: #171717;
+
+    font-size: 30px;
+    font-weight: 600;
+
+    margin: 0;
+}
+
+
+/* =========================================================
+   NAV MENU
+========================================================= */
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+
+    list-style: none;
+
+    gap: 45px;
+
+    margin: 0;
+    padding: 0;
+
+    color: #421278;
+
+    font-size: 19px;
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   NAV MENU ITEMS
+========================================================= */
+
+.nav-menu li {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    padding: 15px 3px;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   NAV LINKS
+========================================================= */
+
+.nav-menu li a {
+    text-decoration: none;
+
+    color: #421278;
+
+    transition: color 0.25s ease;
+}
+
+.nav-menu li:hover a {
+    color: #e63956;
+}
+
+
+/* =========================================================
+   ACTIVE / HOVER UNDERLINE
+========================================================= */
+
+.nav-menu li::after {
+    content: "";
+
+    position: absolute;
+
+    bottom: 5px;
+    left: 50%;
+
+    width: 0;
+    height: 3px;
+
+    border-radius: 10px;
+
+    background: #ff4141;
+
+    transform: translateX(-50%);
+
+    transition: width 0.3s ease;
+}
+
+.nav-menu li:hover::after {
+    width: 70%;
+}
+
+
+/* Existing <hr> from your JSX */
+
+.nav-menu li hr {
+    display: none;
+}
+
+
+/* =========================================================
+   LOGIN + CART SECTION
+========================================================= */
+
+.nav-login-cart {
+    display: flex;
+    align-items: center;
+
+    gap: 28px;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   LOGIN BUTTON
+========================================================= */
+
+.nav-login-cart button {
+    width: 130px;
+    height: 46px;
+
+    outline: none;
+
+    border: 1px solid #7a7a7a;
+
+    border-radius: 50px;
+
+    color: #421278;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    background: #ffffff;
+
+    cursor: pointer;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.nav-login-cart button:hover {
+    color: #ffffff;
+
+    background: #421278;
+
+    border-color: #421278;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 6px 15px rgba(66, 18, 120, 0.20);
+}
+
+.nav-login-cart button:active {
+    transform: scale(0.96);
+}
+
+
+/* Login link inside button */
+
+.nav-login-cart button a {
+    text-decoration: none;
+
+    color: inherit;
+}
+
+
+/* =========================================================
+   CART LINK
+========================================================= */
+
+.nav-login-cart > a {
+    position: relative;
+
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+.nav-login-cart > a:hover {
+    background: #f7effb;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   CART ICON
+========================================================= */
+
+.nav-login-cart > a img {
+    width: 30px;
+    height: auto;
+
+    display: block;
+
+    transition: transform 0.3s ease;
+}
+
+.nav-login-cart > a:hover img {
+    transform: scale(1.08);
+}
+
+
+/* =========================================================
+   CART COUNT
+========================================================= */
+
+.nav-cart-count {
+    position: absolute;
+
+    top: -3px;
+    right: -3px;
+
+    width: 20px;
+    height: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+
+    border-radius: 50%;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    background: #ff3b45;
+    color: #ffffff;
+
+    border: 2px solid #ffffff;
+
+    line-height: 1;
+
+    animation: cartPulse 2s infinite;
+}
+
+
+/* =========================================================
+   CART BADGE ANIMATION
+========================================================= */
+
+@keyframes cartPulse {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.12);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE DROPDOWN ICON
+========================================================= */
+
+.nav-dropdown {
+    display: none;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    padding: 6px;
+
+    transition: transform 0.3s ease;
+}
+
+.nav-dropdown img {
+    width: 30px;
+    height: auto;
+
+    display: block;
+
+    transition: transform 0.4s ease;
+}
+
+.nav-dropdown.open img {
+    transform: rotate(180deg);
+}
+
+
+/* =========================================================
+   LARGE TABLET / SMALL DESKTOP
+========================================================= */
+
+@media (max-width: 1280px) {
+
+    .navbar {
+        width: calc(100% - 30px);
+
+        padding: 9px 22px;
+
+        min-height: 74px;
+    }
+
+    .nav-logo img {
+        width: 75px;
+    }
+
+    .nav-menu {
+        gap: 30px;
+
+        font-size: 17px;
+    }
+
+    .nav-login-cart {
+        gap: 20px;
+    }
+
+    .nav-login-cart button {
+        width: 115px;
+        height: 43px;
+
+        font-size: 15px;
+    }
+
+    .nav-login-cart > a img {
+        width: 29px;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1024px) {
+
+    .navbar {
+        width: calc(100% - 24px);
+
+        padding: 8px 18px;
+
+        min-height: 70px;
+    }
+
+    .nav-logo img {
+        width: 70px;
+    }
+
+    .nav-menu {
+        gap: 22px;
+
+        font-size: 15px;
+    }
+
+    .nav-login-cart {
+        gap: 12px;
+    }
+
+    .nav-login-cart button {
+        width: 95px;
+        height: 38px;
+
+        font-size: 14px;
+    }
+
+    .nav-login-cart > a img {
+        width: 28px;
+    }
+
+    .nav-cart-count {
+        width: 19px;
+        height: 19px;
+
+        font-size: 10px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+/* =========================================================
+   MOBILE NAVBAR
+========================================================= */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        width: calc(100% - 30px);
+
+        height: 62px;
+        min-height: 62px;
+
+        margin: 8px auto;
+
+        padding: 5px 12px;
+
+        display: flex;
+        align-items: center;
+
+        border-radius: 10px;
+
+        box-sizing: border-box;
+    }
+
+
+    /* =========================
+       LOGO
+    ========================= */
+
+    .nav-logo {
+        width: auto;
+        height: 52px;
+
+        display: flex;
+        align-items: center;
+
+        flex-shrink: 0;
+    }
+
+    .nav-logo img {
+        width: 75px;
+        height: auto;
+
+        max-height: 50px;
+
+        object-fit: contain;
+    }
+
+
+    /* =========================
+       HAMBURGER / DROPDOWN
+    ========================= */
+
+    .nav-dropdown {
+        display: block;
+
+        width: 28px;
+        height: 28px;
+
+        padding: 0;
+
+        margin-left: auto;
+        margin-right: 8px;
+
+        border: none;
+        outline: none;
+
+        background: transparent;
+
+        cursor: pointer;
+
+        transform: rotate(-90deg);
+
+        flex-shrink: 0;
+    }
+
+    .nav-dropdown img {
+        width: 28px;
+        height: 28px;
+
+        object-fit: contain;
+
+        display: block;
+
+        transition: transform 0.3s ease;
+    }
+
+    .nav-dropdown.open img {
+        transform: rotate(180deg);
+    }
+
+
+    /* =========================
+       MOBILE MENU
+    ========================= */
+
+    .nav-menu {
+        display: none;
+
+        position: absolute;
+
+        top: calc(100% + 8px);
+        left: 0;
+
+        width: 100%;
+
+        margin: 0;
+        padding: 10px;
+
+        flex-direction: column;
+
+        gap: 3px;
+
+        background: #ffffff;
+
+        border: 1px solid #eeeeee;
+
+        border-radius: 12px;
+
+        box-shadow:
+            0 10px 30px rgba(0, 0, 0, 0.12);
+
+        z-index: 999;
+    }
+
+    .nav-menu-visible {
+        display: flex;
+    }
+
+    .nav-menu li {
+        width: 100%;
+
+        padding: 12px;
+
+        display: flex;
+
+        border-radius: 8px;
+    }
+
+    .nav-menu li:hover {
+        background: #faf4fc;
+    }
+
+    .nav-menu li::after {
+        bottom: 5px;
+    }
+
+
+    /* =========================
+       LOGIN + CART
+    ========================= */
+
+    .nav-login-cart {
+        display: flex;
+
+        align-items: center;
+
+        gap: 5px;
+
+        flex-shrink: 0;
+    }
+
+
+    /* =========================
+       LOGIN
+    ========================= */
+
+    .nav-login-cart button {
+        width: auto;
+        min-width: 62px;
+
+        height: 34px;
+
+        padding: 0 10px;
+
+        border-radius: 50px;
+
+        font-size: 12px;
+    }
+
+
+    /* =========================
+       CART
+    ========================= */
+
+    .nav-login-cart > a {
+        width: 34px;
+        height: 34px;
+
+        flex-shrink: 0;
+    }
+
+    .nav-login-cart > a img {
+        width: 23px;
+        height: auto;
+    }
+
+
+    /* =========================
+       CART BADGE
+    ========================= */
+
+    .nav-cart-count {
+        top: -2px;
+        right: -2px;
+
+        width: 17px;
+        height: 17px;
+
+        font-size: 9px;
+
+        border-width: 1.5px;
+    }
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 500px) {
+
+    .navbar {
+        width: calc(100% - 24px);
+
+        height: 58px;
+        min-height: 58px;
+
+        margin: 7px auto;
+
+        padding: 4px 10px;
+
+        border-radius: 9px;
+    }
+
+
+    /* LOGO */
+
+    .nav-logo {
+        height: 50px;
+    }
+
+    .nav-logo img {
+        width: 72px;
+
+        max-height: 48px;
+    }
+
+
+    /* DROPDOWN */
+
+    .nav-dropdown {
+        width: 25px;
+        height: 25px;
+
+        margin-right: 5px;
+    }
+
+    .nav-dropdown img {
+        width: 25px;
+        height: 25px;
+    }
+
+
+    /* LOGIN */
+
+    .nav-login-cart button {
+        min-width: 60px;
+
+        height: 32px;
+
+        padding: 0 9px;
+
+        font-size: 12px;
+    }
+
+
+    /* CART */
+
+    .nav-login-cart > a {
+        width: 33px;
+        height: 33px;
+    }
+
+    .nav-login-cart > a img {
+        width: 22px;
+    }
+
+    .nav-cart-count {
+        width: 16px;
+        height: 16px;
+
+        font-size: 8px;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .navbar {
+        width: calc(100% - 16px);
+
+        padding: 4px 8px;
+    }
+
+    .nav-logo img {
+        width: 65px;
+    }
+
+    .nav-dropdown {
+        width: 23px;
+        height: 23px;
+
+        margin-right: 3px;
+    }
+
+    .nav-dropdown img {
+        width: 23px;
+        height: 23px;
+    }
+
+    .nav-login-cart button {
+        min-width: 55px;
+
+        padding: 0 7px;
+
+        font-size: 11px;
+    }
+
+    .nav-login-cart {
+        gap: 3px;
+    }
+
+    .nav-login-cart > a {
+        width: 31px;
+        height: 31px;
+    }
+
+    .nav-login-cart > a img {
+        width: 21px;
+    }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 500px) {
+
+    .navbar {
+        width: calc(100% - 12px);
+
+        margin: 7px auto;
+
+        padding: 6px 10px;
+
+        min-height: 58px;
+
+        border-radius: 13px;
+    }
+
+
+    /* Logo */
+
+    .nav-logo img {
+        width: 62px;
+    }
+
+
+    /* Dropdown */
+
+    .nav-dropdown {
+        width: 27px;
+
+        margin-right: 5px;
+    }
+
+
+    /* Login */
+
+    .nav-login-cart button {
+        width: 70px;
+
+        height: 34px;
+
+        font-size: 12px;
+    }
+
+
+    /* Cart */
+
+    .nav-login-cart > a {
+        width: 35px;
+        height: 35px;
+    }
+
+    .nav-login-cart > a img {
+        width: 23px;
+    }
+
+
+    /* Cart count */
+
+    .nav-cart-count {
+        width: 17px;
+        height: 17px;
+
+        font-size: 9px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .navbar {
+        width: calc(100% - 8px);
+
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .nav-logo img {
+        width: 58px;
+    }
+
+    .nav-dropdown {
+        width: 25px;
+    }
+
+    .nav-login-cart button {
+        width: 64px;
+
+        font-size: 11px;
+    }
+
+    .nav-login-cart {
+        gap: 3px;
+    }
+
+    .nav-login-cart > a {
+        width: 33px;
+        height: 33px;
+    }
+
+    .nav-login-cart > a img {
+        width: 22px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE MENU ANIMATION
+========================================================= */
+
+@keyframes mobileMenu {
+
+    from {
+        opacity: 0;
+
+        transform: translateY(-8px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .navbar,
+    .nav-logo,
+    .nav-logo img,
+    .nav-menu li::after,
+    .nav-login-cart button,
+    .nav-login-cart > a,
+    .nav-login-cart > a img,
+    .nav-cart-count,
+    .nav-dropdown,
+    .nav-dropdown img {
+        transition: none !important;
+
+        animation: none !important;
+    }
+
+}
