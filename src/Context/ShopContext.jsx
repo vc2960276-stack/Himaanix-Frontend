@@ -44,7 +44,7 @@ const ShopContextProvider = (props) => {
 
     // Load cart if user is logged in
     if (localStorage.getItem("auth-token")) {
-      fetch("https://shubhvika-backend.vercel.app/getcart", {
+      fetch("https://himaanix-backend.vercel.app//getcart", {
         method: "POST",
         headers: {
           Accept: "application/form-data",
@@ -69,7 +69,7 @@ const ShopContextProvider = (props) => {
     }));
 
     if (localStorage.getItem("auth-token")) {
-      fetch("https://shubhvika-backend.vercel.app/addtocart", {
+      fetch("https://himaanix-backend.vercel.app//addtocart", {
         method: "POST",
         headers: {
           Accept: "application/form-data",
@@ -94,7 +94,7 @@ const ShopContextProvider = (props) => {
     }));
 
     if (localStorage.getItem("auth-token")) {
-      fetch("https://shubhvika-backend.vercel.app/removefromcart", {
+      fetch("https://himaanix-backend.vercel.app//removefromcart", {
         method: "POST",
         headers: {
           Accept: "application/form-data",

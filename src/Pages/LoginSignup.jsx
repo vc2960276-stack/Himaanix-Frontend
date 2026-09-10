@@ -17,7 +17,7 @@ const LoginSignup = () => {
   const login = async () => {
     console.log("Login Function Executed", formData);
     let responseData;
-    await fetch('https://shubhvika-backend.vercel.app/login', {
+    await fetch('https://himaanix-backend.vercel.app//login', {
       method: 'POST',
       headers: {
         Accept: 'application/form-data',
@@ -38,7 +38,7 @@ const LoginSignup = () => {
   const signup = async () => {
     console.log("Siggup Function Executed", formData);
     let responseData;
-    await fetch('https://shubhvika-backend.vercel.app/signup', {
+    await fetch('https://himaanix-backend.vercel.app//signup', {
       method: 'POST',
       headers: {
         Accept: 'application/form-data',
