@@ -1,162 +1,83 @@
-import React, { createContext, useEffect, useState } from "react";
+import React, { createContext, useContext, useEffect, useMemo, useState } from "react";
 
-export const ShopContext = createContext(null);
+const ShopContext = createContext(null);
+export const useShop = () => useContext(ShopContext);
 
-const getDefaultCart = () => {
-  let cart = {};
+const CART_KEY = "hx_cart";
+const WISH_KEY = "hx_wishlist";
 
-  for (let index = 0; index <= 300; index++) {
-    cart[index] = 0;
-  }
-
-  return cart;
+const readLS = (k, fb) => {
+  try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : fb; } catch { return fb; }
 };
 
-const ShopContextProvider = (props) => {
-  const [all_product, setAll_Product] = useState([]);
-  const [cartItems, setCartItems] = useState(getDefaultCart());
+export function ShopProvider({ children }) {
+  const [cart, setCart] = useState(() => readLS(CART_KEY, []));
+  const [wishlist, setWishlist] = useState(() => readLS(WISH_KEY, []));
+  const [cartOpen, setCartOpen] = useState(false);
 
-  // Load products from local JSON
-  useEffect(() => {
-    fetch("/products.json")
-      .then((res) => {
-        if (!res.ok) {
-          throw new Error(`Failed to load products: ${res.status}`);
-        }
+  useEffect(() => { localStorage.setItem(CART_KEY, JSON.stringify(cart)); }, [cart]);
+  useEffect(() => { localStorage.setItem(WISH_KEY, JSON.stringify(wishlist)); }, [wishlist]);
 
-        return res.json();
-      })
-      .then((data) => {
-        console.log("Products loaded:", data);
-
-        // Convert JSON structure to your existing app structure
-        const products = data.products.map((product) => ({
-          ...product,
-          new_price: product.price,
-          old_price: product.oldPrice,
-        }));
-
-        setAll_Product(products);
-      })
-      .catch((error) => {
-        console.error("Error loading products.json:", error);
-      });
-
-    // Load cart if user is logged in
-    if (localStorage.getItem("auth-token")) {
-      fetch("https://himaanix-backend.vercel.app//getcart", {
-        method: "POST",
-        headers: {
-          Accept: "application/form-data",
-          "auth-token": localStorage.getItem("auth-token"),
-          "content-type": "application/json",
-        },
-        body: "",
-      })
-        .then((res) => res.json())
-        .then((data) => setCartItems(data))
-        .catch((error) => {
-          console.error("Error loading cart:", error);
-        });
-    }
-  }, []);
-
-  // Add product to cart
-  const addToCart = (itemId) => {
-    setCartItems((prev) => ({
-      ...prev,
-      [itemId]: (prev[itemId] || 0) + 1,
-    }));
-
-    if (localStorage.getItem("auth-token")) {
-      fetch("https://himaanix-backend.vercel.app//addtocart", {
-        method: "POST",
-        headers: {
-          Accept: "application/form-data",
-          "auth-token": localStorage.getItem("auth-token"),
-          "content-type": "application/json",
-        },
-        body: JSON.stringify({
-          itemId: itemId,
-        }),
-      })
-        .then((response) => response.json())
-        .then((data) => console.log(data))
-        .catch((error) => console.error(error));
-    }
-  };
-
-  // Remove product from cart
-  const removeFromCart = (itemId) => {
-    setCartItems((prev) => ({
-      ...prev,
-      [itemId]: Math.max((prev[itemId] || 0) - 1, 0),
-    }));
-
-    if (localStorage.getItem("auth-token")) {
-      fetch("https://himaanix-backend.vercel.app//removefromcart", {
-        method: "POST",
-        headers: {
-          Accept: "application/form-data",
-          "auth-token": localStorage.getItem("auth-token"),
-          "content-type": "application/json",
-        },
-        body: JSON.stringify({
-          itemId: itemId,
-        }),
-      })
-        .then((response) => response.json())
-        .then((data) => console.log(data))
-        .catch((error) => console.error(error));
-    }
-  };
-
-  // Calculate total cart amount
-  const getTotalCartAmount = () => {
-    let totalAmount = 0;
-
-    for (const item in cartItems) {
-      if (cartItems[item] > 0) {
-        const itemInfo = all_product.find(
-          (product) => product.id === Number(item)
-        );
-
-        if (itemInfo) {
-          totalAmount += itemInfo.new_price * cartItems[item];
-        }
+  const addToCart = (product, { size, color, quantity = 1 } = {}) => {
+    setCart((prev) => {
+      const key = `${product.id}|${size || ""}|${color || ""}`;
+      const idx = prev.findIndex((it) => it.key === key);
+      if (idx > -1) {
+        const next = [...prev];
+        next[idx] = { ...next[idx], quantity: next[idx].quantity + quantity };
+        return next;
       }
-    }
-
-    return totalAmount;
+      return [
+        ...prev,
+        {
+          key,
+          product_id: product.id,
+          name: product.name,
+          price: product.price,
+          old_price: product.old_price,
+          category: product.category,
+          image: product.images?.[0] || null,
+          size: size || null,
+          color: color || null,
+          quantity,
+        },
+      ];
+    });
+    setCartOpen(true);
   };
 
-  // Calculate total cart items
-  const getTotalCartItems = () => {
-    let totalItem = 0;
-
-    for (const item in cartItems) {
-      if (cartItems[item] > 0) {
-        totalItem += cartItems[item];
-      }
-    }
-
-    return totalItem;
+  const updateQty = (key, quantity) => {
+    setCart((prev) => prev.map((it) => (it.key === key ? { ...it, quantity: Math.max(1, quantity) } : it)));
   };
 
-  const contextValue = {
-    all_product,
-    cartItems,
-    addToCart,
-    removeFromCart,
-    getTotalCartAmount,
-    getTotalCartItems,
+  const removeItem = (key) => setCart((prev) => prev.filter((it) => it.key !== key));
+  const clearCart = () => setCart([]);
+
+  const toggleWishlist = (product) => {
+    setWishlist((prev) => {
+      const exists = prev.find((p) => p.id === product.id);
+      if (exists) return prev.filter((p) => p.id !== product.id);
+      return [...prev, { id: product.id, name: product.name, price: product.price, category: product.category }];
+    });
   };
+
+  const inWishlist = (id) => !!wishlist.find((p) => p.id === id);
+
+  const totals = useMemo(() => {
+    const subtotal = cart.reduce((s, it) => s + it.price * it.quantity, 0);
+    const shipping = subtotal > 150 ? 0 : subtotal > 0 ? 12 : 0;
+    return { subtotal, shipping, total: subtotal + shipping, count: cart.reduce((s, it) => s + it.quantity, 0) };
+  }, [cart]);
 
   return (
-    <ShopContext.Provider value={contextValue}>
-      {props.children}
+    <ShopContext.Provider
+      value={{
+        cart, wishlist, cartOpen, setCartOpen,
+        addToCart, updateQty, removeItem, clearCart,
+        toggleWishlist, inWishlist, totals,
+      }}
+    >
+      {children}
     </ShopContext.Provider>
   );
-};
-
-export default ShopContextProvider;
+}

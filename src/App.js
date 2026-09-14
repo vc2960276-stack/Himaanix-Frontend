@@ -1,60 +1,53 @@
-import "./App.css";
-import Navbar from "./Components/Navbar/Navbar";
+import React from "react";
+import { Toaster } from "sonner";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Shop from "./Pages/Shop";
-import ShopCategory from "./Pages/ShopCategory";
-import Product from "./Pages/Product";
-import Cart from "./Pages/Cart";
-import LoginSignup from "./Pages/LoginSignup";
-import Footer from "./Components/Footer/Footer";
-import men_banner from "./Components/Assets/banner_mens.png";
-import women_banner from "./Components/Assets/banner_women.png";
-import kid_banner from "./Components/Assets/banner_kids.png";
-import PrivacyPolicy from "./Pages/PrivacyPolicy";
-import RefundPolicy from "./Pages/RefundPolicy";
-import TermsAndConditions from "./Pages/TermsAndConditions";
+import "@/App.css";
+
+import { AuthProvider } from "@/context/AuthContext";
+import { ShopProvider } from "@/context/ShopContext";
+
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import CartDrawer from "@/components/CartDrawer";
+
+import Home from "@/pages/Home";
+import ProductListing from "@/pages/ProductListing";
+import ProductDetail from "@/pages/ProductDetail";
+import Auth from "@/pages/Auth";
+import Wishlist from "@/pages/Wishlist";
+import Checkout from "@/pages/Checkout";
+import Collections from "@/pages/Collections";
+import Orders from "@/pages/Orders";
+
 function App() {
   return (
-    <div>
+    <div className="App">
       <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Shop />} />
-          <Route
-            path="/privacy-policy"
-            element={<PrivacyPolicy />}
-          />
-
-          <Route
-            path="/refund-policy"
-            element={<RefundPolicy />}
-          />
-
-          <Route
-            path="/terms-and-conditions"
-            element={<TermsAndConditions />}
-          />
-          <Route
-            path="/mens"
-            element={<ShopCategory banner={men_banner} category="Men" />}
-          />
-
-          <Route
-            path="/womens"
-            element={<ShopCategory banner={women_banner} category="Women" />}
-          />
-
-          <Route
-            path="/kids"
-            element={<ShopCategory banner={kid_banner} category="Kids" />}
-          />
-          <Route path="/product" element={<Product />}>
-            <Route path=":productId" element={<Product />} />
-          </Route>
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/login" element={<LoginSignup />} />
-        </Routes>
-        <Footer />
+        <AuthProvider>
+          <ShopProvider>
+            <Navbar />
+            <main data-testid="main-content">
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/men" element={<ProductListing preset={{ category: "men", key: "men", title: "Men" }} />} />
+                <Route path="/women" element={<ProductListing preset={{ category: "women", key: "women", title: "Women" }} />} />
+                <Route path="/kids" element={<ProductListing preset={{ category: "kids", key: "kids", title: "Kids" }} />} />
+                <Route path="/new-arrivals" element={<ProductListing preset={{ is_new: true, key: "new", title: "New Arrivals" }} />} />
+                <Route path="/collections" element={<Collections />} />
+                <Route path="/products" element={<ProductListing preset={{ key: "all", title: "All Pieces" }} />} />
+                <Route path="/product/:id" element={<ProductDetail />} />
+                <Route path="/auth" element={<Auth />} />
+                <Route path="/wishlist" element={<Wishlist />} />
+                <Route path="/account/orders" element={<Orders />} />
+                <Route path="/checkout" element={<Checkout />} />
+                <Route path="*" element={<Home />} />
+              </Routes>
+            </main>
+            <CartDrawer />
+            <Footer />
+            <Toaster position="top-center" richColors />
+          </ShopProvider>
+        </AuthProvider>
       </BrowserRouter>
     </div>
   );
