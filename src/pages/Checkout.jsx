@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { useShop } from "@/context/ShopContext";
+import { useShop } from "@/Context/ShopContext";
 import { useAuth } from "../Context/AuthContext";
 import api from "@/lib/api";
 import { toast } from "sonner";

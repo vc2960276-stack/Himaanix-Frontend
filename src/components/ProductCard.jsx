@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Heart, ShoppingBag } from "lucide-react";
 import ProductImage from "@/components/ProductImage";
-import { useShop } from "@/context/ShopContext";
+import { useShop } from "@/Context/ShopContext";
 
 export default function ProductCard({ product, index = 0 }) {
   const { toggleWishlist, inWishlist, addToCart } = useShop();

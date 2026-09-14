@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { Search, Heart, ShoppingBag, User, Menu, X, Package, LogOut } from "lucide-react";
-import { useShop } from "@/context/ShopContext";
+import { useShop } from "@/Context/ShopContext";
 import { useAuth } from "../Context/AuthContext";
 
 const navLinks = [
