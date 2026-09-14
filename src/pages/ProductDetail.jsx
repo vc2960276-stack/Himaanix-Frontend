@@ -4,7 +4,8 @@ import { Heart, ShoppingBag, ChevronDown, Truck, RotateCcw, ShieldCheck, Star } 
 import api from "@/lib/api";
 import ProductImage from "@/components/ProductImage";
 import ProductCard from "@/components/ProductCard";
-import { useShop } from "@/Context/ShopContext";
+import { useShop } from "@/context/ShopContext";
+import { formatPrice } from "@/lib/currency";
 import { toast } from "sonner";
 
 const SWATCH = {
@@ -111,8 +112,8 @@ export default function ProductDetail() {
           <div className="hx-eyebrow mb-2">{product.category}{product.collection ? ` · ${product.collection}` : ""}</div>
           <h1 className="font-serif text-4xl md:text-5xl leading-tight" data-testid="pdp-title">{product.name}</h1>
           <div className="mt-4 flex items-baseline gap-3">
-            <span className="text-2xl font-medium" data-testid="pdp-price">₹{product.price.toFixed(2)}</span>
-            {product.old_price && <span className="text-[#91857D] line-through">₹{product.old_price.toFixed(2)}</span>}
+            <span className="text-2xl font-medium" data-testid="pdp-price">{formatPrice(product.price)}</span>
+            {product.old_price && <span className="text-[#91857D] line-through">{formatPrice(product.old_price)}</span>}
           </div>
 
           <div className="mt-3 flex items-center gap-2 text-xs">
@@ -190,7 +191,7 @@ export default function ProductDetail() {
               </ul>
             </Section>
             <Section id="shipping" title="Shipping & Returns">
-              Free shipping on orders over ₹150. Cash on Delivery available across all serviceable locations. 30-day easy returns — no questions asked.
+              Free shipping on orders over ₹2,999. Cash on Delivery available across all serviceable locations. 30-day easy returns — no questions asked.
             </Section>
             <Section id="care" title="Care Instructions">
               Machine wash cold with similar colours. Do not bleach. Tumble dry low or lay flat to dry. Warm iron on reverse.

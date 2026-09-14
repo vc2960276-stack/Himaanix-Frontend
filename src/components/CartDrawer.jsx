@@ -1,8 +1,9 @@
 import React from "react";
 import { X, Minus, Plus, ShoppingBag, Trash2 } from "lucide-react";
-import { useShop } from "@/Context/ShopContext";
+import { useShop } from "@/context/ShopContext";
 import { Link, useNavigate } from "react-router-dom";
 import ProductImage from "@/components/ProductImage";
+import { formatPrice } from "@/lib/currency";
 
 export default function CartDrawer() {
   const { cartOpen, setCartOpen, cart, updateQty, removeItem, totals } = useShop();
@@ -55,7 +56,7 @@ export default function CartDrawer() {
                     <button className="px-2 py-1" onClick={() => updateQty(it.key, it.quantity + 1)} data-testid={`cart-qty-inc-${it.product_id}`}><Plus className="w-3 h-3" /></button>
                   </div>
                   <div className="text-right">
-                    <div className="font-medium">₹{(it.price * it.quantity).toFixed(2)}</div>
+                    <div className="font-medium">{formatPrice(it.price * it.quantity)}</div>
                     <button className="text-xs text-[#91857D] mt-1 hover:text-[#A85D48] flex items-center gap-1" onClick={() => removeItem(it.key)} data-testid={`cart-remove-${it.product_id}`}>
                       <Trash2 className="w-3 h-3" /> Remove
                     </button>
@@ -70,15 +71,15 @@ export default function CartDrawer() {
           <div className="p-6 border-t border-[#2B1B17]/10 space-y-3">
             <div className="flex justify-between text-sm">
               <span>Subtotal</span>
-              <span data-testid="cart-subtotal">₹{totals.subtotal.toFixed(2)}</span>
+              <span data-testid="cart-subtotal">{formatPrice(totals.subtotal)}</span>
             </div>
             <div className="flex justify-between text-sm text-[#91857D]">
               <span>Shipping</span>
-              <span>{totals.shipping === 0 ? "Free" : `₹${totals.shipping.toFixed(2)}`}</span>
+              <span>{totals.shipping === 0 ? "Free" : formatPrice(totals.shipping)}</span>
             </div>
             <div className="flex justify-between font-serif text-xl border-t border-[#2B1B17]/10 pt-3">
               <span>Total</span>
-              <span data-testid="cart-total">₹{totals.total.toFixed(2)}</span>
+              <span data-testid="cart-total">{formatPrice(totals.total)}</span>
             </div>
             <button
               className="w-full bg-[#1A1110] text-[#FDFBF7] py-4 text-xs uppercase tracking-[0.28em] hover:bg-[#2B1B17]"

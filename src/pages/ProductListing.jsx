@@ -3,6 +3,7 @@ import { useParams, useSearchParams } from "react-router-dom";
 import { SlidersHorizontal, X } from "lucide-react";
 import api from "@/lib/api";
 import ProductCard from "@/components/ProductCard";
+import { formatPrice } from "@/lib/currency";
 
 const SIZES = ["XS", "S", "M", "L", "XL"];
 const COLOR_SWATCHES = [
@@ -23,9 +24,10 @@ export default function ProductListing({ preset }) {
   const [loading, setLoading] = useState(true);
   const [sizes, setSizes] = useState([]);
   const [colors, setColors] = useState([]);
-  const [priceMax, setPriceMax] = useState(300);
+  const [priceMax, setPriceMax] = useState(40000);
   const [sort, setSort] = useState("newest");
   const [filterOpen, setFilterOpen] = useState(false);
+  const [visible, setVisible] = useState(24);
 
   const category = preset?.category || params.category;
   const listingKey = preset?.key || category || "all";
@@ -70,6 +72,11 @@ export default function ProductListing({ preset }) {
     return list;
   }, [products, sizes, colors, priceMax, sort, q]);
 
+  // Reset the visible window whenever the active filter set changes.
+  useEffect(() => { setVisible(24); }, [sizes, colors, priceMax, sort, q, category]);
+
+  const visibleItems = filtered.slice(0, visible);
+
   const toggle = (arr, setArr, v) => setArr(arr.includes(v) ? arr.filter((x) => x !== v) : [...arr, v]);
 
   const Filters = (
@@ -104,17 +111,17 @@ export default function ProductListing({ preset }) {
         </div>
       </div>
       <div>
-        <div className="hx-eyebrow mb-3">Max Price · <span className="text-[#1A1110]">${priceMax}</span></div>
+        <div className="hx-eyebrow mb-3">Max Price · <span className="text-[#1A1110]">{formatPrice(priceMax)}</span></div>
         <input
-          type="range" min="20" max="300" step="10"
+          type="range" min="500" max="40000" step="500"
           value={priceMax}
           onChange={(e) => setPriceMax(Number(e.target.value))}
           className="w-full accent-[#1A1110]"
           data-testid="filter-price-range"
         />
       </div>
-      {(sizes.length || colors.length || priceMax < 300) ? (
-        <button onClick={() => { setSizes([]); setColors([]); setPriceMax(300); }} className="text-xs uppercase tracking-[0.22em] underline">Clear filters</button>
+      {(sizes.length || colors.length || priceMax < 40000) ? (
+        <button onClick={() => { setSizes([]); setColors([]); setPriceMax(40000); }} className="text-xs uppercase tracking-[0.22em] underline">Clear filters</button>
       ) : null}
     </div>
   );
@@ -159,8 +166,19 @@ export default function ProductListing({ preset }) {
               <div className="text-center py-24 text-[#91857D]">No pieces match your filters. Try widening the range.</div>
             )}
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-              {filtered.map((p, i) => <ProductCard key={p.id} product={p} index={i} />)}
+              {visibleItems.map((p, i) => <ProductCard key={p.id} product={p} index={i} />)}
             </div>
+            {visible < filtered.length && (
+              <div className="mt-12 flex justify-center">
+                <button
+                  onClick={() => setVisible((v) => v + 24)}
+                  className="border border-[#1A1110] px-8 py-4 text-xs uppercase tracking-[0.28em] hover:bg-[#1A1110] hover:text-[#FDFBF7]"
+                  data-testid="load-more-button"
+                >
+                  Load More · {filtered.length - visible} pieces
+                </button>
+              </div>
+            )}
           </div>
         </div>
       </section>

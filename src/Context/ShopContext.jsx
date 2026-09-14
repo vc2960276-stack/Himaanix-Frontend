@@ -65,7 +65,7 @@ export function ShopProvider({ children }) {
 
   const totals = useMemo(() => {
     const subtotal = cart.reduce((s, it) => s + it.price * it.quantity, 0);
-    const shipping = subtotal > 150 ? 0 : subtotal > 0 ? 12 : 0;
+    const shipping = subtotal >= 2999 ? 0 : subtotal > 0 ? 149 : 0;
     return { subtotal, shipping, total: subtotal + shipping, count: cart.reduce((s, it) => s + it.quantity, 0) };
   }, [cart]);
 

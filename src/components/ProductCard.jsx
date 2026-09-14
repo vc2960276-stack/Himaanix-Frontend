@@ -2,7 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Heart, ShoppingBag } from "lucide-react";
 import ProductImage from "@/components/ProductImage";
-import { useShop } from "@/Context/ShopContext";
+import { useShop } from "@/context/ShopContext";
+import { formatPrice } from "@/lib/currency";
 
 export default function ProductCard({ product, index = 0 }) {
   const { toggleWishlist, inWishlist, addToCart } = useShop();
@@ -60,9 +61,9 @@ export default function ProductCard({ product, index = 0 }) {
         <div className="hx-eyebrow text-[#91857D] mb-1">{product.category}</div>
         <h3 className="font-serif text-lg md:text-xl leading-tight text-[#1A1110]">{product.name}</h3>
         <div className="mt-1 flex items-baseline gap-2">
-          <span className="text-[#1A1110] font-medium">₹{product.price.toFixed(2)}</span>
+          <span className="text-[#1A1110] font-medium">{formatPrice(product.price)}</span>
           {product.old_price && (
-            <span className="text-[#91857D] text-sm line-through">₹{product.old_price.toFixed(2)}</span>
+            <span className="text-[#91857D] text-sm line-through">{formatPrice(product.old_price)}</span>
           )}
         </div>
       </Link>

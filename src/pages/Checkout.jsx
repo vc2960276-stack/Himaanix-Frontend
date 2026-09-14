@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { useShop } from "@/Context/ShopContext";
-import { useAuth } from "../Context/AuthContext";
+import { useShop } from "@/context/ShopContext";
+import { useAuth } from "@/context/AuthContext";
 import api from "@/lib/api";
+import { formatPrice } from "@/lib/currency";
 import { toast } from "sonner";
 import { CheckCircle2 } from "lucide-react";
 
@@ -126,15 +127,15 @@ export default function Checkout() {
                   <div className="font-medium">{it.name}</div>
                   <div className="text-xs text-[#91857D]">{it.size} · {it.color} · Qty {it.quantity}</div>
                 </div>
-                <div>${(it.price * it.quantity).toFixed(2)}</div>
+                <div>{formatPrice(it.price * it.quantity)}</div>
               </div>
             ))}
             {cart.length === 0 && <div className="text-sm text-[#5C524C]">Your bag is empty. <Link to="/products" className="underline">Shop now</Link></div>}
           </div>
           <div className="border-t border-[#2B1B17]/15 mt-5 pt-4 space-y-2 text-sm">
-            <div className="flex justify-between"><span>Subtotal</span><span>₹{totals.subtotal.toFixed(2)}</span></div>
-            <div className="flex justify-between text-[#5C524C]"><span>Shipping</span><span>{totals.shipping === 0 ? "Free" : `₹${totals.shipping.toFixed(2)}`}</span></div>
-            <div className="flex justify-between font-serif text-xl border-t border-[#2B1B17]/15 pt-3"><span>Total</span><span>₹{totals.total.toFixed(2)}</span></div>
+            <div className="flex justify-between"><span>Subtotal</span><span>{formatPrice(totals.subtotal)}</span></div>
+            <div className="flex justify-between text-[#5C524C]"><span>Shipping</span><span>{totals.shipping === 0 ? "Free" : formatPrice(totals.shipping)}</span></div>
+            <div className="flex justify-between font-serif text-xl border-t border-[#2B1B17]/15 pt-3"><span>Total</span><span>{formatPrice(totals.total)}</span></div>
           </div>
         </aside>
       </div>

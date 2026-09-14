@@ -35,7 +35,7 @@ const PROMO_IMG = IMG("photo-1544441893-675973e31985");
 const TRUST = [
   { icon: Sparkles,       title: "Premium Quality",  desc: "Ethically sourced, obsessively finished." },
   { icon: ShieldCheck,    title: "Secure Payments",  desc: "COD & encrypted card options." },
-  { icon: Truck, title: "Fast Delivery", desc: "Free shipping over ₹150." },
+  { icon: Truck,          title: "Fast Delivery",    desc: "Free shipping over ₹2,999." },
   { icon: RotateCcw,      title: "Easy Returns",     desc: "30-day no-questions returns." },
   { icon: HeadphonesIcon, title: "Concierge Care",   desc: "Real people, 7 days a week." },
 ];
@@ -93,7 +93,7 @@ export default function Home() {
             <div className="mt-10 flex items-center gap-6 text-xs text-[#5C524C]">
               <div className="flex items-center gap-2"><span className="w-8 h-px bg-[#1A1110]" /> Est. 2024</div>
               <div>·</div>
-              <div>Free shipping over ₹150</div>
+              <div>Free shipping over ₹2,999</div>
             </div>
           </div>
           <div className="md:col-span-6 relative animate-fade-up" style={{ animationDelay: '150ms' }}>

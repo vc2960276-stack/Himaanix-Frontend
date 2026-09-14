@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Heart, X, ShoppingBag } from "lucide-react";
-import { useShop } from "@/Context/ShopContext";
+import { useShop } from "@/context/ShopContext";
 import ProductImage from "@/components/ProductImage";
+import { formatPrice } from "@/lib/currency";
 import api from "@/lib/api";
 import { toast } from "sonner";
 
@@ -51,7 +52,7 @@ export default function Wishlist() {
               <div className="mt-4">
                 <div className="hx-eyebrow text-[#91857D] mb-1">{p.category}</div>
                 <div className="font-serif text-lg">{p.name}</div>
-                <div className="mt-1 font-medium">₹{(p.price || 0).toFixed(2)}</div>
+                <div className="mt-1 font-medium">{formatPrice(p.price || 0)}</div>
                 <button
                   onClick={() => { if (details[w.id]) { addToCart(details[w.id], { size: details[w.id].sizes?.[1], color: details[w.id].colors?.[0] }); toast.success("Moved to bag."); } }}
                   className="mt-3 inline-flex items-center gap-2 text-xs uppercase tracking-[0.28em] border-b border-[#1A1110] pb-1"

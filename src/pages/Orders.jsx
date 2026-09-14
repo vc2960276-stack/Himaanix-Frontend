@@ -2,9 +2,10 @@ import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Package, ChevronRight, MapPin, Truck } from "lucide-react";
 import api from "@/lib/api";
-import { useAuth } from "../Context/AuthContext";
+import { useAuth } from "@/context/AuthContext";
 import ProductImage from "@/components/ProductImage";
 import OrderTimeline from "@/components/OrderTimeline";
+import { formatPrice } from "@/lib/currency";
 
 const STATUS_TONE = {
   confirmed: { label: "Confirmed",  dot: "#C89D66", text: "#2B1B17" },
@@ -82,7 +83,7 @@ export default function Orders() {
                     </div>
                     <div>
                       <div className="hx-eyebrow text-[10px]">Total</div>
-                      <div className="font-serif text-lg mt-1">${o.total.toFixed(2)}</div>
+                      <div className="font-serif text-lg mt-1">{formatPrice(o.total)}</div>
                     </div>
                     <div>
                       <div className="hx-eyebrow text-[10px]">Status</div>
@@ -120,9 +121,9 @@ export default function Orders() {
                           {o.payment_method === "COD" ? "Cash on Delivery" : o.payment_method}
                         </div>
                         <div className="mt-3 text-xs text-[#91857D] space-y-1">
-                          <div className="flex justify-between"><span>Subtotal</span><span>₹{o.subtotal.toFixed(2)}</span></div>
-                          <div className="flex justify-between"><span>Shipping</span><span>{o.shipping === 0 ? "Free" : `₹${o.shipping.toFixed(2)}`}</span></div>
-                          <div className="flex justify-between text-[#1A1110] font-medium pt-1 border-t border-[#2B1B17]/10 mt-1"><span>Total</span><span>₹{o.total.toFixed(2)}</span></div>
+                          <div className="flex justify-between"><span>Subtotal</span><span>{formatPrice(o.subtotal)}</span></div>
+                          <div className="flex justify-between"><span>Shipping</span><span>{o.shipping === 0 ? "Free" : formatPrice(o.shipping)}</span></div>
+                          <div className="flex justify-between text-[#1A1110] font-medium pt-1 border-t border-[#2B1B17]/10 mt-1"><span>Total</span><span>{formatPrice(o.total)}</span></div>
                         </div>
                       </div>
                     </div>
@@ -138,7 +139,7 @@ export default function Orders() {
                             <div className="flex-1 text-sm">
                               <Link to={`/product/${it.product_id}`} className="font-serif text-base leading-tight hover:text-[#C89D66]">{it.name}</Link>
                               <div className="text-xs text-[#91857D] mt-1">{it.size && `Size ${it.size} · `}{it.color} · Qty {it.quantity}</div>
-                              <div className="mt-1">₹{(it.price * it.quantity).toFixed(2)}</div>
+                              <div className="mt-1">{formatPrice(it.price * it.quantity)}</div>
                             </div>
                           </div>
                         ))}

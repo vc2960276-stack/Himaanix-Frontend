@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { Search, Heart, ShoppingBag, User, Menu, X, Package, LogOut } from "lucide-react";
-import { useShop } from "@/Context/ShopContext";
-import { useAuth } from "../Context/AuthContext";
+import { useShop } from "@/context/ShopContext";
+import { useAuth } from "../context/AuthContext";
 
 const navLinks = [
   { to: "/", label: "Home" },
@@ -79,8 +79,7 @@ export default function Navbar() {
                 to={l.to}
                 data-testid={`nav-link-${l.label.toLowerCase().replace(/\s/g, "-")}`}
                 className={({ isActive }) =>
-                  `hx-underline-link text-[13px] uppercase tracking-[0.22em] font-medium ${
-                    isActive ? "text-[#1A1110]" : "text-[#5C524C]"
+                  `hx-underline-link text-[13px] uppercase tracking-[0.22em] font-medium ${isActive ? "text-[#1A1110]" : "text-[#5C524C]"
                   } hover:text-[#1A1110]`
                 }
               >
