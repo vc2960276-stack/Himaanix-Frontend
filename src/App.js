@@ -3,7 +3,7 @@ import { Toaster } from "sonner";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "@/App.css";
 
-import { AuthProvider } from "./context/AuthContext";
+import { AuthProvider } from "./Context/AuthContext";
 import { ShopProvider } from "./context/ShopContext";
 
 import Navbar from "@/components/Navbar";
