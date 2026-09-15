@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Heart, X, ShoppingBag } from "lucide-react";
-import { useShop } from "@/context/ShopContext";
+import { useShop } from "@/Context/ShopContext";
 import ProductImage from "@/components/ProductImage";
 import { formatPrice } from "@/lib/currency";
 import api from "@/lib/api";

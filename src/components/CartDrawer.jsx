@@ -1,6 +1,6 @@
 import React from "react";
 import { X, Minus, Plus, ShoppingBag, Trash2 } from "lucide-react";
-import { useShop } from "@/context/ShopContext";
+import { useShop } from "@/Context/ShopContext";
 import { Link, useNavigate } from "react-router-dom";
 import ProductImage from "@/components/ProductImage";
 import { formatPrice } from "@/lib/currency";

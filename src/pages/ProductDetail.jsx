@@ -4,7 +4,7 @@ import { Heart, ShoppingBag, ChevronDown, Truck, RotateCcw, ShieldCheck, Star } 
 import api from "@/lib/api";
 import ProductImage from "@/components/ProductImage";
 import ProductCard from "@/components/ProductCard";
-import { useShop } from "@/context/ShopContext";
+import { useShop } from "@/Context/ShopContext";
 import { formatPrice } from "@/lib/currency";
 import { toast } from "sonner";
 
