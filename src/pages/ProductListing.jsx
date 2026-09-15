@@ -175,7 +175,7 @@ export default function ProductListing({ preset }) {
                   className="border border-[#1A1110] px-8 py-4 text-xs uppercase tracking-[0.28em] hover:bg-[#1A1110] hover:text-[#FDFBF7]"
                   data-testid="load-more-button"
                 >
-                  Load More · {filtered.length - visible} pieces
+                  Load More
                 </button>
               </div>
             )}
