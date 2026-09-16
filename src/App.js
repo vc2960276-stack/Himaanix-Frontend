@@ -18,6 +18,16 @@ import Wishlist from "@/pages/Wishlist";
 import Checkout from "@/pages/Checkout";
 import Collections from "@/pages/Collections";
 import Orders from "@/pages/Orders";
+import Contact from "./pages/Contact";
+import About from "./pages/About";
+import Shipping from "./pages/Shipping";
+import Returns from "./pages/Returns";
+import RefundPolicy from "./pages/RefundPolicy";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Terms from "./pages/Terms";
+import OurStory from "./pages/OurStory";
+import Careers from "./pages/Careers";
+import Sustainability from "./pages/Sustainablity";
 
 function App() {
   return (
@@ -34,6 +44,16 @@ function App() {
                 <Route path="/kids" element={<ProductListing preset={{ category: "kids", key: "kids", title: "Kids" }} />} />
                 <Route path="/new-arrivals" element={<ProductListing preset={{ is_new: true, key: "new", title: "New Arrivals" }} />} />
                 <Route path="/collections" element={<Collections />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/about-us" element={<About />} />
+                <Route path="/terms-conditions" element={<Terms />} />
+                <Route path="/refund-policy" element={<RefundPolicy />} />
+                <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+                <Route path="/returns" element={<Returns />} />
+                <Route path="/shipping" element={<Shipping />} />
+                <Route path="/our-story" element={<OurStory />} />
+                <Route path='/careers' element={<Careers />} />
+                <Route path='/sustainability' element={<Sustainability />} />
                 <Route path="/products" element={<ProductListing preset={{ key: "all", title: "All Pieces" }} />} />
                 <Route path="/product/:id" element={<ProductDetail />} />
                 <Route path="/auth" element={<Auth />} />

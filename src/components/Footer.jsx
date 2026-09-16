@@ -22,22 +22,22 @@ export default function Footer() {
         <div>
           <div className="hx-eyebrow text-[#C89D66] mb-4">Customer Care</div>
           <ul className="space-y-2 text-sm">
-            <li><a href="#" className="hover:text-[#C89D66]">Contact Us</a></li>
-            <li><a href="#" className="hover:text-[#C89D66]">Shipping & Delivery</a></li>
-            <li><a href="#" className="hover:text-[#C89D66]">Return Policy</a></li>
-            <li><a href="#" className="hover:text-[#C89D66]">Refund Policy</a></li>
-            <li><a href="#" className="hover:text-[#C89D66]">Privacy Policy</a></li>
-            <li><a href="#" className="hover:text-[#C89D66]">Terms & Conditions</a></li>
+            <li><a href="/contact" className="hover:text-[#C89D66]">Contact Us</a></li>
+            <li><a href="/shipping" className="hover:text-[#C89D66]">Shipping & Delivery</a></li>
+            <li><a href="/returns" className="hover:text-[#C89D66]">Return Policy</a></li>
+            <li><a href="/refund-policy" className="hover:text-[#C89D66]">Refund Policy</a></li>
+            <li><a href="/privacy-policy" className="hover:text-[#C89D66]">Privacy Policy</a></li>
+            <li><a href="/terms-conditions" className="hover:text-[#C89D66]">Terms & Conditions</a></li>
           </ul>
         </div>
 
         <div>
           <div className="hx-eyebrow text-[#C89D66] mb-4">Company</div>
           <ul className="space-y-2 text-sm">
-            <li><a href="#" className="hover:text-[#C89D66]">About Us</a></li>
-            <li><a href="#" className="hover:text-[#C89D66]">Our Story</a></li>
-            <li><a href="#" className="hover:text-[#C89D66]">Careers</a></li>
-            <li><a href="#" className="hover:text-[#C89D66]">Sustainability</a></li>
+            <li><a href="/about-us" className="hover:text-[#C89D66]">About Us</a></li>
+            <li><a href="/our-story" className="hover:text-[#C89D66]">Our Story</a></li>
+            <li><a href="/careers" className="hover:text-[#C89D66]">Careers</a></li>
+            <li><a href="/sustainability" className="hover:text-[#C89D66]">Sustainability</a></li>
           </ul>
         </div>
 

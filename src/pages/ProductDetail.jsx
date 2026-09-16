@@ -142,7 +142,7 @@ export default function ProductDetail() {
           <div className="mt-8">
             <div className="flex items-center justify-between mb-3">
               <div className="hx-eyebrow">Size</div>
-              <button className="hx-eyebrow underline">Size Guide</button>
+              {/* <button className="hx-eyebrow underline">Size Guide</button> */}
             </div>
             <div className="grid grid-cols-5 gap-2">
               {product.sizes.map((s) => (
@@ -185,10 +185,10 @@ export default function ProductDetail() {
 
           <div className="mt-10">
             <Section id="details" title="Product Details">
-              <p className="mb-3">{product.description}</p>
-              <ul className="list-disc pl-5 space-y-1">
-                {product.details.map((d, i) => <li key={i}>{d}</li>)}
-              </ul>
+              <div
+                className="prose prose-sm max-w-none text-[#5C524C]"
+                dangerouslySetInnerHTML={{ __html: product.description || product.body_html || "" }}
+              />
             </Section>
             <Section id="shipping" title="Shipping & Returns">
               Free shipping on orders over ₹2,999. Cash on Delivery available across all serviceable locations. 30-day easy returns — no questions asked.
