@@ -13,7 +13,7 @@ function formatDetail(d) {
 
 export default function Auth() {
   const [mode, setMode] = useState("login");
-  const [form, setForm] = useState({ name: "", email: "", password: "" });
+  const [form, setForm] = useState({ name: "", email: "", password: "", mobile: "" });
   const [loading, setLoading] = useState(false);
   const { login, register } = useAuth();
   const navigate = useNavigate();
@@ -27,7 +27,7 @@ export default function Auth() {
     setLoading(true);
     try {
       if (mode === "login") await login(form.email, form.password);
-      else await register(form.name, form.email, form.password);
+      else await register(form.name, form.email, form.password, form.mobile);
       toast.success(mode === "login" ? "Welcome back." : "Welcome to HIMAANIX.");
       navigate(next);
     } catch (err) {
@@ -60,6 +60,12 @@ export default function Auth() {
               <label className="block">
                 <span className="hx-eyebrow text-[10px]">Full Name</span>
                 <input required value={form.name} onChange={(e) => update("name", e.target.value)} className="mt-1 w-full bg-transparent border-b border-[#2B1B17]/20 py-2 focus:outline-none focus:border-[#1A1110]" data-testid="auth-name-input" />
+              </label>
+            )}
+            {mode === "register" && (
+              <label className="block">
+                <span className="hx-eyebrow text-[10px]">Mobile</span>
+                <input required type="tel" inputMode="numeric" autoComplete="tel" pattern="[0-9]{10}" maxLength={10} value={form.mobile} onChange={(e) => update("mobile", e.target.value.replace(/\D/g, "").slice(0, 10))} className="mt-1 w-full bg-transparent border-b border-[#2B1B17]/20 py-2 focus:outline-none focus:border-[#1A1110]" data-testid="auth-mobile-input" />
               </label>
             )}
             <label className="block">
