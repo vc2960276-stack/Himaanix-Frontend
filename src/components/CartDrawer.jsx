@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { X, Minus, Plus, ShoppingBag, Trash2 } from "lucide-react";
 import { useShop } from "@/Context/ShopContext";
-import { useAuth } from "../context/AuthContext";
+import { useAuth } from "../Context/AuthContext";
 import { Link, useNavigate } from "react-router-dom";
 import ProductImage from "@/components/ProductImage";
 import { formatPrice } from "@/lib/currency";
