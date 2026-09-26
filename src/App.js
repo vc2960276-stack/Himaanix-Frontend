@@ -3,8 +3,8 @@ import { Toaster } from "sonner";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "@/App.css";
 
-import { AuthProvider } from "@/Context/AuthContext";
-import { ShopProvider } from "@/Context/ShopContext";
+import { AuthProvider } from "@/context/AuthContext";
+import { ShopProvider } from "@/context/ShopContext";
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -18,6 +18,7 @@ import Wishlist from "@/pages/Wishlist";
 import Checkout from "@/pages/Checkout";
 import Collections from "@/pages/Collections";
 import Orders from "@/pages/Orders";
+import OrderTracking from "@/pages/OrderTracking";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Shipping from "./pages/Shipping";
@@ -59,6 +60,7 @@ function App() {
                 <Route path="/auth" element={<Auth />} />
                 <Route path="/wishlist" element={<Wishlist />} />
                 <Route path="/account/orders" element={<Orders />} />
+                <Route path="/account/orders/:id" element={<OrderTracking />} />
                 <Route path="/checkout" element={<Checkout />} />
                 <Route path="*" element={<Home />} />
               </Routes>

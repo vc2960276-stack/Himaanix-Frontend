@@ -19,9 +19,37 @@ const fmt = (iso) => {
 
 export default function OrderTimeline({ tracking }) {
   if (!tracking?.timeline?.length) return null;
-  const { timeline, current_status, estimated_delivery } = tracking;
-  const doneCount = timeline.filter((s) => s.completed).length;
-  const progressPct = ((doneCount - 1) / (timeline.length - 1)) * 100;
+  const { timeline } = tracking;
+  const confirmed = timeline.find((step) => step.key === "confirmed");
+  const orderDate = new Date(confirmed?.completed_at || confirmed?.target_at);
+  const hasOrderDate = Number.isFinite(orderDate.getTime());
+  const plannedDate = (dayOffset) => {
+    if (!hasOrderDate) return null;
+    const date = new Date(orderDate);
+    date.setDate(date.getDate() + dayOffset);
+    return date;
+  };
+  const schedule = {
+    confirmed: plannedDate(0),
+    packed: plannedDate(0),
+    shipped: plannedDate(1),
+    delivered: plannedDate(2),
+  };
+  const displayTimeline = timeline.map((step) => {
+    const date = schedule[step.key];
+    if (!date) return step;
+    const completed = date.getTime() <= Date.now();
+    return {
+      ...step,
+      completed,
+      completed_at: completed ? date.toISOString() : null,
+      target_at: date.toISOString(),
+    };
+  });
+  const current_status = [...displayTimeline].reverse().find((step) => step.completed)?.key || "confirmed";
+  const estimated_delivery = schedule.delivered?.toISOString() || tracking.estimated_delivery;
+  const doneCount = displayTimeline.filter((s) => s.completed).length;
+  const progressPct = ((doneCount - 1) / (displayTimeline.length - 1)) * 100;
 
   return (
     <div className="border border-[#2B1B17]/10 bg-white p-5 md:p-6" data-testid="order-timeline">
@@ -29,7 +57,7 @@ export default function OrderTimeline({ tracking }) {
         <div>
           <div className="hx-eyebrow text-[10px]">Order Tracking</div>
           <div className="font-serif text-xl mt-1 capitalize">
-            {timeline.find((s) => s.key === current_status)?.label || "Confirmed"}
+            {displayTimeline.find((s) => s.key === current_status)?.label || "Confirmed"}
           </div>
         </div>
         <div className="text-right">
@@ -47,7 +75,7 @@ export default function OrderTimeline({ tracking }) {
         />
 
         <div className="relative grid grid-cols-4 gap-3">
-          {timeline.map((s) => {
+          {displayTimeline.map((s) => {
             const Icon = ICONS[s.key] || Clock;
             const active = s.completed;
             const isCurrent = s.key === current_status;

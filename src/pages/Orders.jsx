@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { Package, ChevronRight, MapPin, Truck } from "lucide-react";
+import { Package, ChevronLeft, ChevronRight, MapPin, Truck } from "lucide-react";
 import api from "@/lib/api";
-import { useAuth } from "@/Context/AuthContext";
+import { useAuth } from "@/context/AuthContext";
 import ProductImage from "@/components/ProductImage";
 import OrderTimeline from "@/components/OrderTimeline";
 import { formatPrice } from "@/lib/currency";
@@ -21,11 +21,14 @@ const fmtDate = (iso) => {
   } catch { return ""; }
 };
 
+const ORDERS_PER_PAGE = 5;
+
 export default function Orders() {
   const { user, loading: authLoading } = useAuth();
   const navigate = useNavigate();
   const [orders, setOrders] = useState(null);
   const [expanded, setExpanded] = useState({});
+  const [page, setPage] = useState(1);
 
   useEffect(() => {
     if (authLoading) return;
@@ -42,6 +45,11 @@ export default function Orders() {
     return <div className="min-h-[60vh] flex items-center justify-center text-[#91857D]">Loading your orders…</div>;
   }
 
+  const pageCount = Math.max(1, Math.ceil(orders.length / ORDERS_PER_PAGE));
+  const currentPage = Math.min(page, pageCount);
+  const firstOrder = (currentPage - 1) * ORDERS_PER_PAGE;
+  const visibleOrders = orders.slice(firstOrder, firstOrder + ORDERS_PER_PAGE);
+
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12" data-testid="orders-page">
       <div className="hx-eyebrow mb-3">My Account</div>
@@ -56,8 +64,12 @@ export default function Orders() {
           <Link to="/products" className="inline-block mt-8 bg-[#1A1110] text-[#FDFBF7] px-6 py-3 text-xs uppercase tracking-[0.28em]">Start Shopping</Link>
         </div>
       ) : (
-        <div className="mt-10 space-y-6">
-          {orders.map((o) => {
+          <>
+            <div className="mt-10 mb-4 text-sm text-[#5C524C]" data-testid="orders-range">
+              Showing {firstOrder + 1}–{Math.min(firstOrder + ORDERS_PER_PAGE, orders.length)} of {orders.length} orders
+            </div>
+            <div className="space-y-6">
+              {visibleOrders.map((o) => {
             const tone = STATUS_TONE[o.status] || STATUS_TONE.confirmed;
             const open = !!expanded[o.id];
             const itemCount = o.items.reduce((s, it) => s + it.quantity, 0);
@@ -83,7 +95,7 @@ export default function Orders() {
                     </div>
                     <div>
                       <div className="hx-eyebrow text-[10px]">Total</div>
-                      <div className="font-serif text-lg mt-1">{formatPrice(o.total)}</div>
+                      <div className="font-sans text-base font-medium tabular-nums mt-1">{formatPrice(o.total)}</div>
                     </div>
                     <div>
                       <div className="hx-eyebrow text-[10px]">Status</div>
@@ -98,6 +110,9 @@ export default function Orders() {
 
                 {open && (
                   <div className="border-t border-[#2B1B17]/10 p-5 md:p-6 space-y-6 bg-[#FDFBF7]" data-testid={`order-details-${o.id}`}>
+                    <Link to={`/account/orders/${o.id}`} className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] underline underline-offset-4" data-testid={`track-order-${o.id}`}>
+                      Track Order <ChevronRight className="w-4 h-4" />
+                    </Link>
                     {o.tracking && <OrderTimeline tracking={o.tracking} />}
 
                     <div className="grid md:grid-cols-2 gap-6">
@@ -150,7 +165,35 @@ export default function Orders() {
               </div>
             );
           })}
-        </div>
+            </div>
+            {pageCount > 1 && (
+              <nav className="mt-8 flex items-center justify-between border-t border-[#2B1B17]/10 pt-5" aria-label="Order history pages" data-testid="orders-pagination">
+                <button
+                  type="button"
+                  onClick={() => setPage(currentPage - 1)}
+                  disabled={currentPage === 1}
+                  className="inline-flex items-center gap-1 px-3 py-2 text-xs uppercase tracking-[0.16em] disabled:cursor-not-allowed disabled:opacity-40 hover:text-[#C89D66]"
+                  aria-label="Previous orders page"
+                  data-testid="orders-previous-page"
+                >
+                  <ChevronLeft className="w-4 h-4" /> Previous
+                </button>
+                <span className="text-sm tabular-nums text-[#5C524C]" aria-live="polite">
+                  Page {currentPage} of {pageCount}
+                </span>
+                <button
+                  type="button"
+                  onClick={() => setPage(currentPage + 1)}
+                  disabled={currentPage === pageCount}
+                  className="inline-flex items-center gap-1 px-3 py-2 text-xs uppercase tracking-[0.16em] disabled:cursor-not-allowed disabled:opacity-40 hover:text-[#C89D66]"
+                  aria-label="Next orders page"
+                  data-testid="orders-next-page"
+                >
+                  Next <ChevronRight className="w-4 h-4" />
+                </button>
+              </nav>
+            )}
+          </>
       )}
     </div>
   );

@@ -4,8 +4,11 @@ import { SlidersHorizontal, X, Sparkles, Bell } from "lucide-react";
 import api from "@/lib/api";
 import ProductCard from "@/components/ProductCard";
 import { formatPrice } from "@/lib/currency";
+import { getProductColors } from "@/lib/productOptions";
 
 const SIZES = ["XS", "S", "M", "L", "XL"];
+const normalizeSize = (size) => String(size ?? "").trim().toLowerCase();
+const normalizeColor = (color) => String(color ?? "").trim().toLowerCase();
 const COLOR_SWATCHES = [
   { name: "Ivory", hex: "#F5F0EB" },
   { name: "Camel", hex: "#C89D66" },
@@ -13,7 +16,58 @@ const COLOR_SWATCHES = [
   { name: "Charcoal", hex: "#3A3230" },
   { name: "Sand", hex: "#D9C6B1" },
   { name: "Ecru", hex: "#EFE6DD" },
+  { name: "Off White", hex: "#F8F7F2" },
+  { name: "Multicolor", hex: "conic-gradient(#d94c3d, #e5be43, #4d9d73, #4c72b8, #d94c3d)" },
 ];
+const COLOR_HEX_BY_NAME = {
+  beige: "#D8C3A5",
+  black: "#252525",
+  blue: "#3876C5",
+  "bottle green": "#1F5D42",
+  burgundy: "#7B2434",
+  brown: "#76513E",
+  camel: "#C89D66",
+  charcoal: "#3A3230",
+  cream: "#FFF4D6",
+  default: "#D4D0CB",
+  "deep indigo": "#2A3348",
+  ecru: "#EFE6DD",
+  espresso: "#2B1B17",
+  fuchsia: "#CF3EA8",
+  green: "#3D8C54",
+  grey: "#8C8C8C",
+  gray: "#8C8C8C",
+  ivory: "#F5F0EB",
+  indigo: "#4B4BA8",
+  "indigo blue": "#3F51A6",
+  khaki: "#A89B73",
+  lilac: "#C4A2D6",
+  maroon: "#722F37",
+  mustard: "#D1A629",
+  navy: "#203556",
+  "navy blue": "#183153",
+  olive: "#7A7B4F",
+  peach: "#F5B69E",
+  pink: "#E88CA8",
+  purple: "#7444A3",
+  "raw indigo": "#3A4A63",
+  red: "#CC3B3B",
+  rust: "#B44A32",
+  sand: "#D9C6B1",
+  slate: "#667085",
+  stone: "#B9AA97",
+  teal: "#278F8A",
+  "turquoise blue": "#28BFC0",
+  white: "#FFFFFF",
+  yellow: "#E8C83E",
+};
+
+const getColorHex = (color) => {
+  const key = normalizeColor(color);
+  return COLOR_SWATCHES.find((swatch) => normalizeColor(swatch.name) === key)?.hex
+    || COLOR_HEX_BY_NAME[key]
+    || "#B9AA97";
+};
 
 // Categories that should render the "Coming Soon" page instead of a listing.
 const COMING_SOON_CATEGORIES = new Set(["kids", "kid", "children", "baby"]);
@@ -78,32 +132,71 @@ export default function ProductListing({ preset }) {
   const params = useParams();
   const [searchParams] = useSearchParams();
   const q = searchParams.get("q")?.toLowerCase() || "";
+  const queryCategory = searchParams.get("category");
 
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [sizes, setSizes] = useState([]);
   const [colors, setColors] = useState([]);
+  const [showAllColors, setShowAllColors] = useState(false);
   const [priceMax, setPriceMax] = useState(40000);
   const [sort, setSort] = useState("newest");
   const [filterOpen, setFilterOpen] = useState(false);
   const [visible, setVisible] = useState(24);
 
-  const category = preset?.category || params.category;
+  const category = preset?.category || params.category || queryCategory;
   const listingKey = preset?.key || category || "all";
   const presetIsNew = !!preset?.is_new;
   const presetIsPopular = !!preset?.is_popular;
   const presetTitle = preset?.title;
+  const availableSizes = useMemo(() => {
+    const sizesByKey = new Map();
+    products.forEach((product) => {
+      (Array.isArray(product.sizes) ? product.sizes : []).forEach((size) => {
+        const label = String(size ?? "").trim();
+        const key = normalizeSize(label);
+        if (key && !sizesByKey.has(key)) sizesByKey.set(key, label);
+      });
+    });
+
+    if (!sizesByKey.size) return SIZES;
+    const standardSizes = SIZES.filter((size) => sizesByKey.has(normalizeSize(size)));
+    const otherSizes = [...sizesByKey.entries()]
+      .filter(([key]) => !SIZES.some((size) => normalizeSize(size) === key))
+      .map(([, label]) => label)
+      .sort((a, b) => a.localeCompare(b));
+    return [...standardSizes, ...otherSizes];
+  }, [products]);
+  const availableColors = useMemo(() => {
+    const colorsByKey = new Map();
+    products.forEach((product) => {
+      getProductColors(product).forEach((color) => {
+        const label = String(color ?? "").trim();
+        const key = normalizeColor(label);
+        if (key && !colorsByKey.has(key)) colorsByKey.set(key, label);
+      });
+    });
+
+    if (!colorsByKey.size) return [];
+    const knownColors = COLOR_SWATCHES.filter((color) => colorsByKey.has(normalizeColor(color.name)));
+    const otherColors = [...colorsByKey.entries()]
+      .filter(([key]) => !COLOR_SWATCHES.some((color) => normalizeColor(color.name) === key))
+      .map(([, name]) => ({ name, hex: getColorHex(name) }))
+      .sort((a, b) => a.name.localeCompare(b.name));
+    return [...knownColors, ...otherColors];
+  }, [products]);
 
   // Detect "coming soon" categories early so we can short-circuit the listing.
   const isComingSoon =
     !!category && COMING_SOON_CATEGORIES.has(String(category).toLowerCase());
 
   const title = useMemo(() => {
+    if (queryCategory) return queryCategory.charAt(0).toUpperCase() + queryCategory.slice(1);
     if (presetTitle) return presetTitle;
     if (q) return `Search: “${q}”`;
     if (!category) return "All Pieces";
     return category.charAt(0).toUpperCase() + category.slice(1);
-  }, [presetTitle, category, q]);
+  }, [presetTitle, category, queryCategory, q]);
 
   useEffect(() => {
     // Skip fetching entirely for coming-soon categories.
@@ -130,8 +223,18 @@ export default function ProductListing({ preset }) {
   const filtered = useMemo(() => {
     let list = [...products];
     if (q) list = list.filter((p) => p.name.toLowerCase().includes(q) || p.category.includes(q));
-    if (sizes.length) list = list.filter((p) => p.sizes.some((s) => sizes.includes(s)));
-    if (colors.length) list = list.filter((p) => p.colors.some((c) => colors.includes(c)));
+    if (sizes.length) {
+      const selectedSizes = new Set(sizes.map(normalizeSize));
+      list = list.filter((p) =>
+        (Array.isArray(p.sizes) ? p.sizes : []).some((size) => selectedSizes.has(normalizeSize(size)))
+      );
+    }
+    if (colors.length) {
+      const selectedColors = new Set(colors.map(normalizeColor));
+      list = list.filter((p) =>
+        getProductColors(p).some((color) => selectedColors.has(normalizeColor(color)))
+      );
+    }
     list = list.filter((p) => p.price <= priceMax);
     if (sort === "price-asc") list.sort((a, b) => a.price - b.price);
     else if (sort === "price-desc") list.sort((a, b) => b.price - a.price);
@@ -149,6 +252,14 @@ export default function ProductListing({ preset }) {
   }
 
   const visibleItems = filtered.slice(0, visible);
+  const displayedColors = showAllColors
+    ? availableColors
+    : [
+      ...availableColors.slice(0, 6),
+      ...availableColors.slice(6).filter((color) =>
+        colors.some((selectedColor) => normalizeColor(selectedColor) === normalizeColor(color.name))
+      ),
+    ];
 
   const toggle = (arr, setArr, v) => setArr(arr.includes(v) ? arr.filter((x) => x !== v) : [...arr, v]);
 
@@ -157,11 +268,14 @@ export default function ProductListing({ preset }) {
       <div>
         <div className="hx-eyebrow mb-3">Size</div>
         <div className="flex flex-wrap gap-2">
-          {SIZES.map((s) => (
+          {availableSizes.map((s) => (
             <button
               key={s}
-              onClick={() => toggle(sizes, setSizes, s)}
-              className={`px-3 py-1.5 border text-xs uppercase tracking-widest ${sizes.includes(s) ? "bg-[#1A1110] text-[#FDFBF7] border-[#1A1110]" : "border-[#2B1B17]/30 hover:border-[#1A1110]"}`}
+              onClick={() => setSizes((selected) =>
+                selected.some((size) => normalizeSize(size) === normalizeSize(s)) ? [] : [s]
+              )}
+              className={`px-3 py-1.5 border text-xs uppercase tracking-widest ${sizes.some((size) => normalizeSize(size) === normalizeSize(s)) ? "bg-[#1A1110] text-[#FDFBF7] border-[#1A1110]" : "border-[#2B1B17]/30 hover:border-[#1A1110]"}`}
+              aria-pressed={sizes.some((size) => normalizeSize(size) === normalizeSize(s))}
               data-testid={`filter-size-${s}`}
             >{s}</button>
           ))}
@@ -169,19 +283,37 @@ export default function ProductListing({ preset }) {
       </div>
       <div>
         <div className="hx-eyebrow mb-3">Colour</div>
-        <div className="flex flex-wrap gap-3">
-          {COLOR_SWATCHES.map((c) => (
-            <button
-              key={c.name}
-              onClick={() => toggle(colors, setColors, c.name)}
-              className={`flex items-center gap-2 px-2 py-1 text-xs ${colors.includes(c.name) ? "ring-1 ring-[#1A1110]" : ""}`}
-              data-testid={`filter-color-${c.name.toLowerCase()}`}
-            >
-              <span className="w-5 h-5 rounded-full border border-[#2B1B17]/20" style={{ background: c.hex }} />
-              {c.name}
-            </button>
-          ))}
-        </div>
+        {availableColors.length ? (
+          <div className="grid grid-cols-2 gap-1">
+            {displayedColors.map((c) => (
+              <button
+                key={c.name}
+                onClick={() => setColors((selected) =>
+                  selected.some((color) => normalizeColor(color) === normalizeColor(c.name)) ? [] : [c.name]
+                )}
+                className={`flex min-w-0 items-center gap-2 border px-2 py-2 text-left text-xs transition-colors ${colors.some((color) => normalizeColor(color) === normalizeColor(c.name)) ? "border-[#1A1110] bg-[#EFE6DD]" : "border-transparent hover:border-[#2B1B17]/20"}`}
+                aria-pressed={colors.some((color) => normalizeColor(color) === normalizeColor(c.name))}
+                data-testid={`filter-color-${c.name.toLowerCase()}`}
+              >
+                <span className="h-5 w-5 shrink-0 rounded-full border border-[#2B1B17]/20 shadow-inner" style={{ background: c.hex || getColorHex(c.name) }} />
+                <span className="truncate">{c.name}</span>
+              </button>
+            ))}
+          </div>
+        ) : (
+          <p className="text-xs text-[#91857D]">{loading ? "Loading colours…" : "No colour options listed"}</p>
+        )}
+        {availableColors.length > 6 && (
+          <button
+            type="button"
+            onClick={() => setShowAllColors((show) => !show)}
+            className="mt-2 text-xs uppercase tracking-[0.16em] underline underline-offset-4"
+            aria-expanded={showAllColors}
+            data-testid="toggle-color-options"
+          >
+            {showAllColors ? "Show less" : "Show more"}
+          </button>
+        )}
       </div>
       <div>
         <div className="hx-eyebrow mb-3">Max Price · <span className="text-[#1A1110]">{formatPrice(priceMax)}</span></div>
@@ -236,7 +368,17 @@ export default function ProductListing({ preset }) {
           </aside>
           <div className="col-span-12 md:col-span-9 lg:col-span-10">
             {filtered.length === 0 && !loading && (
-              <div className="text-center py-24 text-[#91857D]">No pieces match your filters. Try widening the range.</div>
+              <div className="text-center py-24 text-[#91857D]">
+                <p>No pieces match your filters. Try widening the range.</p>
+                {priceMax < 40000 && (
+                  <button
+                    onClick={() => setPriceMax(40000)}
+                    className="mt-4 text-xs uppercase tracking-[0.22em] underline text-[#1A1110]"
+                  >
+                    Remove price limit ({formatPrice(priceMax)})
+                  </button>
+                )}
+              </div>
             )}
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
               {visibleItems.map((p, i) => <ProductCard key={p.id} product={p} index={i} />)}

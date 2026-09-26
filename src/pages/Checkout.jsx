@@ -1,18 +1,32 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { useShop } from "@/Context/ShopContext";
-import { useAuth } from "@/Context/AuthContext";
+import { useShop } from "@/context/ShopContext";
+import { useAuth } from "@/context/AuthContext";
 import api from "@/lib/api";
 import { formatPrice } from "@/lib/currency";
 import { toast } from "sonner";
 import { CheckCircle2 } from "lucide-react";
+import OrderTimeline from "@/components/OrderTimeline";
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+} from "@/components/ui/alert-dialog";
 
 export default function Checkout() {
   const { cart, totals, clearCart } = useShop();
   const { user } = useAuth();
   const navigate = useNavigate();
   const [placing, setPlacing] = useState(false);
+  const [confirmOpen, setConfirmOpen] = useState(false);
   const [orderId, setOrderId] = useState(null);
+  const [tracking, setTracking] = useState(null);
+  const [trackingLoading, setTrackingLoading] = useState(false);
   const [form, setForm] = useState({
     full_name: user?.name || "", phone: "", address_line1: "", address_line2: "",
     city: "", state: "", pincode: "", country: "India",
@@ -20,13 +34,17 @@ export default function Checkout() {
 
   const update = (k, v) => setForm((s) => ({ ...s, [k]: v }));
 
-  const submit = async (e) => {
+  const submit = (e) => {
     e.preventDefault();
     if (!user) {
       toast.error("Please sign in to place your order.");
       return navigate("/auth?next=/checkout");
     }
     if (cart.length === 0) return toast.error("Your bag is empty.");
+    setConfirmOpen(true);
+  };
+
+  const placeOrder = async () => {
     setPlacing(true);
     try {
       const { data } = await api.post("/orders", {
@@ -42,6 +60,15 @@ export default function Checkout() {
       });
       setOrderId(data.order_id);
       clearCart();
+      setTrackingLoading(true);
+      try {
+        const { data: order } = await api.get(`/orders/${data.order_id}`);
+        setTracking(order.tracking || null);
+      } catch {
+        toast.info("Your order was placed. Tracking details are available in Order History.");
+      } finally {
+        setTrackingLoading(false);
+      }
     } catch (err) {
       toast.error(err?.response?.data?.detail || "Could not place order.");
     } finally {
@@ -51,12 +78,22 @@ export default function Checkout() {
 
   if (orderId) {
     return (
-      <div className="max-w-2xl mx-auto px-4 py-24 text-center" data-testid="order-confirmation">
+      <div className="max-w-3xl mx-auto px-4 py-16 md:py-24 text-center" data-testid="order-confirmation">
         <CheckCircle2 className="w-14 h-14 text-[#C89D66] mx-auto" />
         <div className="hx-eyebrow mt-6">Order Confirmed</div>
         <h1 className="font-serif text-4xl md:text-5xl mt-3">Thank you for your order.</h1>
         <p className="mt-4 text-[#5C524C]">Your order <span className="font-mono text-[#1A1110]">{orderId}</span> has been placed. We'll notify you when it ships.</p>
+        <div className="mt-10 text-left">
+          {tracking ? (
+            <OrderTimeline tracking={tracking} />
+          ) : trackingLoading ? (
+            <p className="text-center text-sm text-[#91857D]" role="status">Loading order tracking…</p>
+          ) : (
+            <p className="text-center text-sm text-[#91857D]">Track this order anytime from Order History.</p>
+          )}
+        </div>
         <div className="mt-8 flex flex-wrap gap-3 justify-center">
+          <Link to={`/account/orders/${orderId}`} className="bg-[#1A1110] text-[#FDFBF7] px-6 py-3 text-xs uppercase tracking-[0.28em]" data-testid="track-order-link">Track This Order</Link>
           <Link to="/account/orders" className="bg-[#1A1110] text-[#FDFBF7] px-6 py-3 text-xs uppercase tracking-[0.28em]" data-testid="view-orders-link">View My Orders</Link>
           <Link to="/products" className="border border-[#1A1110] px-6 py-3 text-xs uppercase tracking-[0.28em]">Continue Shopping</Link>
         </div>
@@ -139,6 +176,31 @@ export default function Checkout() {
           </div>
         </aside>
       </div>
+
+      <AlertDialog open={confirmOpen} onOpenChange={setConfirmOpen}>
+        <AlertDialogContent className="border-[#2B1B17]/15 bg-[#FDFBF7] text-[#1A1110]">
+          <AlertDialogHeader>
+            <AlertDialogTitle className="font-serif text-2xl">Confirm your COD order?</AlertDialogTitle>
+            <AlertDialogDescription className="text-[#5C524C]">
+              Place this order with Cash on Delivery for {formatPrice(totals.total)}?
+            </AlertDialogDescription>
+          </AlertDialogHeader>
+          <AlertDialogFooter>
+            <AlertDialogCancel disabled={placing}>Go Back</AlertDialogCancel>
+            <AlertDialogAction
+              disabled={placing}
+              onClick={(event) => {
+                event.preventDefault();
+                placeOrder();
+              }}
+              className="bg-[#1A1110] text-[#FDFBF7] hover:bg-[#2B1B17]"
+              data-testid="checkout-confirm-order"
+            >
+              {placing ? "Placing order…" : "Confirm COD Order"}
+            </AlertDialogAction>
+          </AlertDialogFooter>
+        </AlertDialogContent>
+      </AlertDialog>
     </div>
   );
 }

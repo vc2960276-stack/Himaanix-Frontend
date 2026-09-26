@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { Search, Heart, ShoppingBag, User, Menu, X, Package, LogOut } from "lucide-react";
-import { useShop } from "@/Context/ShopContext";
-import { useAuth } from "../Context/AuthContext";
+import { useShop } from "@/context/ShopContext";
+import { useAuth } from "../context/AuthContext";
 
 const navLinks = [
   { to: "/", label: "Home" },
@@ -130,6 +130,15 @@ export default function Navbar() {
                 <User className="w-5 h-5" />
               </Link>
             )}
+            <Link
+              to="/account/orders"
+              className="hidden md:inline-flex p-1.5 hover:text-[#C89D66]"
+              aria-label="View My Orders"
+              title="View My Orders"
+              data-testid="nav-orders-shortcut"
+            >
+              <Package className="w-5 h-5" />
+            </Link>
             <Link to="/wishlist" className="p-1.5 relative hover:text-[#C89D66]" aria-label="Wishlist" data-testid="nav-wishlist-link">
               <Heart className="w-5 h-5" />
               {wishlist.length > 0 && (

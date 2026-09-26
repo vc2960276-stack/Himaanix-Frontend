@@ -194,7 +194,7 @@ const SECTIONS = [
         title: "Contact Us",
         body: [
             "If you have questions about these Terms, or about a specific order, our team is here to help.",
-            "Email: legal@himaanix.com",
+            "Email: himaanixtrading@gmail.com",
             "Phone: +91 98765 43210 (Mon–Sat, 10am–7pm IST)",
             "You can also reach us through our Contact page. We aim to respond to all enquiries within 2 business days.",
         ],

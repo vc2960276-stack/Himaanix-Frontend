@@ -4,8 +4,9 @@ import { Heart, ShoppingBag, ChevronDown, Truck, RotateCcw, ShieldCheck, Star } 
 import api from "@/lib/api";
 import ProductImage from "@/components/ProductImage";
 import ProductCard from "@/components/ProductCard";
-import { useShop } from "@/Context/ShopContext";
+import { useShop } from "@/context/ShopContext";
 import { formatPrice } from "@/lib/currency";
+import { getProductColors } from "@/lib/productOptions";
 import { toast } from "sonner";
 
 const SWATCH = {
@@ -13,6 +14,10 @@ const SWATCH = {
   Charcoal: "#3A3230", Sand: "#D9C6B1", Ecru: "#EFE6DD",
   Cream: "#F5EEE3", Olive: "#7A7B4F", White: "#FFFFFF",
   Stone: "#B9AA97", "Raw Indigo": "#3A4A63", "Deep Indigo": "#2A3348",
+  "Off White": "#F8F7F2",
+  Multicolor: "conic-gradient(#d94c3d, #e5be43, #4d9d73, #4c72b8, #d94c3d)",
+  "Bottle Green": "#1F5D42", Burgundy: "#7B2434", Grey: "#8C8C8C",
+  Khaki: "#A89B73", Navy: "#203556", Slate: "#667085",
 };
 
 const REVIEWS = [
@@ -38,7 +43,7 @@ export default function ProductDetail() {
       const { data } = await api.get(`/products/${id}`);
       setProduct(data);
       setSize(data.sizes?.[1] || data.sizes?.[0] || "");
-      setColor(data.colors?.[0] || "");
+      setColor(getProductColors(data)[0] || "");
       setGallery(0);
       const { data: rel } = await api.get("/products", { params: { category: data.category } });
       setRelated(rel.products.filter((p) => p.id !== data.id).slice(0, 4));
@@ -48,6 +53,7 @@ export default function ProductDetail() {
 
   if (!product) return <div className="min-h-[60vh] flex items-center justify-center text-[#91857D]">Loading…</div>;
 
+  const productColors = getProductColors(product);
   const wished = inWishlist(product.id);
   const handleAdd = () => {
     if (!size) return toast.error("Please select a size.");
@@ -73,7 +79,7 @@ export default function ProductDetail() {
   return (
     <div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 text-xs text-[#91857D] tracking-widest uppercase" data-testid="pdp-breadcrumb">
-        <Link to="/" className="hover:text-[#1A1110]">Home</Link> / <Link to={`/${product.category}`} className="hover:text-[#1A1110]">{product.category}</Link> / <span className="text-[#1A1110]">{product.name}</span>
+        <Link to="/" className="hover:text-[#1A1110]">Home</Link> / <Link to={`/products?category=${encodeURIComponent(product.category)}`} className="hover:text-[#1A1110]">{product.category}</Link> / <span className="text-[#1A1110]">{product.name}</span>
       </div>
 
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 grid grid-cols-1 md:grid-cols-12 gap-8">
@@ -122,10 +128,11 @@ export default function ProductDetail() {
           </div>
 
           {/* colors */}
-          <div className="mt-8">
-            <div className="hx-eyebrow mb-3">Colour · <span className="text-[#1A1110]">{color}</span></div>
-            <div className="flex gap-3">
-              {product.colors.map((c) => (
+          {productColors.length > 0 && (
+            <div className="mt-8">
+              <div className="hx-eyebrow mb-3">Colour · <span className="text-[#1A1110]">{color}</span></div>
+              <div className="flex gap-3">
+                {productColors.map((c) => (
                 <button
                   key={c}
                   onClick={() => setColor(c)}
@@ -134,9 +141,10 @@ export default function ProductDetail() {
                   aria-label={c}
                   data-testid={`pdp-color-${c.replace(/\s/g, '-').toLowerCase()}`}
                 />
-              ))}
+                ))}
+              </div>
             </div>
-          </div>
+          )}
 
           {/* sizes */}
           <div className="mt-8">

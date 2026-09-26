@@ -12,6 +12,7 @@ import {
     ChevronDown,
 } from "lucide-react";
 import { toast } from "sonner";
+import api from "@/lib/api";
 
 const CONTACT_CARDS = [
     {
@@ -81,13 +82,16 @@ export default function Contact() {
         }
         setSending(true);
         try {
-            // Replace with your real endpoint:
-            // await api.post("/contact", form);
-            await new Promise((r) => setTimeout(r, 800));
-            toast.success("Message sent. We'll be in touch shortly.");
+            const { data } = await api.post("/contact", {
+                name: form.name.trim(),
+                email: form.email.trim(),
+                subject: form.subject.trim(),
+                message: form.message.trim(),
+            });
+            toast.success(data.message || "Message sent. We'll be in touch shortly.");
             setForm({ name: "", email: "", subject: "", message: "" });
-        } catch {
-            toast.error("Something went wrong. Please try again.");
+        } catch (err) {
+            toast.error(err?.response?.data?.detail || "Something went wrong. Please try again.");
         } finally {
             setSending(false);
         }
