@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { ArrowLeft, MapPin, Package, Truck } from "lucide-react";
 import api from "@/lib/api";
-import { useAuth } from "@/context/AuthContext";
+import { useAuth } from "@/Context/AuthContext";
 import OrderTimeline from "@/components/OrderTimeline";
 import { formatPrice } from "@/lib/currency";
 

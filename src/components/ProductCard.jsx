@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Heart, ShoppingBag } from "lucide-react";
 import ProductImage from "@/components/ProductImage";
-import { useShop } from "@/context/ShopContext";
+import { useShop } from "@/Context/ShopContext";
 import { formatPrice } from "@/lib/currency";
 
 export default function ProductCard({ product, index = 0 }) {
