@@ -48,7 +48,7 @@ export default function Footer() {
 
               <p>
                 <span className="text-[#EFE6DD]/80">Contact & Support:</span>{" "}
-                89-5897-5608
+                +91 8958975608
               </p>
 
             </div>

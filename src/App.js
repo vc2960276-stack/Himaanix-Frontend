@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Toaster } from "sonner";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import "@/App.css";
 
 import { AuthProvider } from "@/Context/AuthContext";
@@ -30,20 +30,91 @@ import OurStory from "./pages/OurStory";
 import Careers from "./pages/Careers";
 import Sustainability from "./pages/Sustainablity";
 
+
+// Scroll to top whenever route changes
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant",
+    });
+  }, [pathname]);
+
+  return null;
+}
+
+
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
+
+        {/* Automatically scroll to top on route change */}
+        <ScrollToTop />
+
         <AuthProvider>
           <ShopProvider>
             <Navbar />
+
             <main data-testid="main-content">
               <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/men" element={<ProductListing preset={{ category: "men", key: "men", title: "Men" }} />} />
-                <Route path="/women" element={<ProductListing preset={{ category: "women", key: "women", title: "Women" }} />} />
-                <Route path="/kids" element={<ProductListing preset={{ category: "kids", key: "kids", title: "Kids" }} />} />
-                <Route path="/new-arrivals" element={<ProductListing preset={{ is_new: true, key: "new", title: "New Arrivals" }} />} />
+
+                <Route
+                  path="/men"
+                  element={
+                    <ProductListing
+                      preset={{
+                        category: "men",
+                        key: "men",
+                        title: "Men",
+                      }}
+                    />
+                  }
+                />
+
+                <Route
+                  path="/women"
+                  element={
+                    <ProductListing
+                      preset={{
+                        category: "women",
+                        key: "women",
+                        title: "Women",
+                      }}
+                    />
+                  }
+                />
+
+                <Route
+                  path="/kids"
+                  element={
+                    <ProductListing
+                      preset={{
+                        category: "kids",
+                        key: "kids",
+                        title: "Kids",
+                      }}
+                    />
+                  }
+                />
+
+                <Route
+                  path="/new-arrivals"
+                  element={
+                    <ProductListing
+                      preset={{
+                        is_new: true,
+                        key: "new",
+                        title: "New Arrivals",
+                      }}
+                    />
+                  }
+                />
+
                 <Route path="/collections" element={<Collections />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/about-us" element={<About />} />
@@ -53,21 +124,39 @@ function App() {
                 <Route path="/returns" element={<Returns />} />
                 <Route path="/shipping" element={<Shipping />} />
                 <Route path="/our-story" element={<OurStory />} />
-                <Route path='/careers' element={<Careers />} />
-                <Route path='/sustainability' element={<Sustainability />} />
-                <Route path="/products" element={<ProductListing preset={{ key: "all", title: "All Pieces" }} />} />
+                <Route path="/careers" element={<Careers />} />
+                <Route path="/sustainability" element={<Sustainability />} />
+
+                <Route
+                  path="/products"
+                  element={
+                    <ProductListing
+                      preset={{
+                        key: "all",
+                        title: "All Pieces",
+                      }}
+                    />
+                  }
+                />
+
                 <Route path="/product/:id" element={<ProductDetail />} />
                 <Route path="/auth" element={<Auth />} />
                 <Route path="/wishlist" element={<Wishlist />} />
                 <Route path="/account/orders" element={<Orders />} />
                 <Route path="/account/orders/:id" element={<OrderTracking />} />
                 <Route path="/checkout" element={<Checkout />} />
+
                 <Route path="*" element={<Home />} />
               </Routes>
             </main>
+
             <CartDrawer />
             <Footer />
-            <Toaster position="top-center" richColors />
+
+            <Toaster
+              position="top-center"
+              richColors
+            />
           </ShopProvider>
         </AuthProvider>
       </BrowserRouter>
