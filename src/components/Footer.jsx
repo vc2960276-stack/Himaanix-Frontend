@@ -26,11 +26,18 @@ export default function Footer() {
             </div>
 
             <div className="space-y-2 text-xs text-[#EFE6DD]/55 leading-relaxed">
+
+
+
               <p>
                 <span className="text-[#EFE6DD]/80">GSTIN:</span>{" "}
                 07AAICH8742H1ZA
               </p>
 
+              <p>
+                <span className="text-[#EFE6DD]/80">CIN:</span>{" "}
+                U47711DC2026PTC473946
+              </p>
 
               <p>
                 <span className="text-[#EFE6DD]/80">
@@ -38,17 +45,24 @@ export default function Footer() {
                 </span>{" "}
                 himaanixtrading@gmail.com
               </p>
+
+              <p>
+                <span className="text-[#EFE6DD]/80">Contact & Support:</span>{" "}
+                89-5897-5608
+              </p>
+
             </div>
           </div>
         </div>
 
-        {/* Customer Care */}
+        {/* Legal */}
         <div>
           <div className="hx-eyebrow text-[#C89D66] mb-4">
-            Customer Care
+            Legal
           </div>
 
           <ul className="space-y-2 text-sm">
+
             <li>
               <Link
                 to="/contact"
@@ -102,6 +116,7 @@ export default function Footer() {
                 Terms & Conditions
               </Link>
             </li>
+
           </ul>
         </div>
 
@@ -112,6 +127,7 @@ export default function Footer() {
           </div>
 
           <ul className="space-y-2 text-sm">
+
             <li>
               <Link
                 to="/about-us"
@@ -121,14 +137,14 @@ export default function Footer() {
               </Link>
             </li>
 
-            <li>
+            {/* <li>
               <Link
                 to="/our-story"
                 className="hover:text-[#C89D66] transition-colors"
               >
                 Our Story
               </Link>
-            </li>
+            </li> */}
 
             <li>
               <Link
@@ -147,6 +163,7 @@ export default function Footer() {
                 Sustainability
               </Link>
             </li>
+
           </ul>
         </div>
 
@@ -157,6 +174,7 @@ export default function Footer() {
           </div>
 
           <ul className="space-y-2 text-sm">
+
             <li>
               <Link
                 to="/women"
@@ -201,8 +219,10 @@ export default function Footer() {
                 Collections
               </Link>
             </li>
+
           </ul>
         </div>
+
       </div>
 
       {/* Registered Office Address */}
@@ -251,7 +271,6 @@ export default function Footer() {
               <div className="w-[45px] h-[32px] rounded-md bg-white flex items-center justify-center">
                 <div className="relative w-[24px] h-[18px]">
                   <span className="absolute left-0 top-[2px] w-[15px] h-[15px] rounded-full bg-[#EB001B]" />
-
                   <span className="absolute right-0 top-[2px] w-[15px] h-[15px] rounded-full bg-[#F79E1B]" />
                 </div>
               </div>
