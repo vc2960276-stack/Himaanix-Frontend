@@ -20,36 +20,71 @@ export default function Footer() {
           </p>
 
           {/* Company Legal Information */}
+          {/* Company Legal Information */}
           <div className="mt-8 max-w-sm">
             <div className="hx-eyebrow text-[#C89D66] mb-4">
               HIMAANIX TRADING PRIVATE LIMITED
             </div>
 
-            <div className="space-y-2 text-xs text-[#EFE6DD]/55 leading-relaxed">
+            <div className="space-y-5 text-xs text-[#EFE6DD]/55 leading-relaxed">
 
+              {/* Delhi Registration */}
+              <div>
+                <p className="text-[#EFE6DD] font-semibold mb-2">
+                  Delhi Registration
+                </p>
 
+                <p>
+                  <span className="text-[#EFE6DD]/80">GSTIN:</span>{" "}
+                  07AAICH8742H1ZA
+                </p>
 
-              <p>
-                <span className="text-[#EFE6DD]/80">GSTIN:</span>{" "}
-                07AAICH8742H1ZA
-              </p>
+                <p>
+                  <span className="text-[#EFE6DD]/80">Registered Office:</span>{" "}
+                  1295 First Floor, Pan Mandi, Sadar Bazar,
+                  Delhi — 110006
+                </p>
+              </div>
 
-              <p>
-                <span className="text-[#EFE6DD]/80">CIN:</span>{" "}
-                U47711DC2026PTC473946
-              </p>
+              {/* Rajasthan Registration */}
+              <div>
+                <p className="text-[#EFE6DD] font-semibold mb-2">
+                  Rajasthan Registration
+                </p>
 
-              <p>
-                <span className="text-[#EFE6DD]/80">
-                  Grievance Officer:
-                </span>{" "}
-                himaanixtrading@gmail.com
-              </p>
+                <p>
+                  <span className="text-[#EFE6DD]/80">GSTIN:</span>{" "}
+                  08AAICH8742H1Z8
+                </p>
 
-              <p>
-                <span className="text-[#EFE6DD]/80">Contact & Support:</span>{" "}
-                +91 8958975608
-              </p>
+                <p>
+                  <span className="text-[#EFE6DD]/80">Registered Office:</span>{" "}
+                  F-105 Vijay Laxmi Tower, Central Spine,
+                  Vidhyadhar Nagar, Jaipur, Rajasthan — 302039
+                </p>
+              </div>
+
+              {/* Corporate Information */}
+              <div>
+                <p>
+                  <span className="text-[#EFE6DD]/80">CIN:</span>{" "}
+                  U47711DC2026PTC473946
+                </p>
+
+                <p>
+                  <span className="text-[#EFE6DD]/80">
+                    Grievance Officer:
+                  </span>{" "}
+                  himaanixtrading@gmail.com
+                </p>
+
+                <p>
+                  <span className="text-[#EFE6DD]/80">
+                    Contact & Support:
+                  </span>{" "}
+                  +91 8958975608
+                </p>
+              </div>
 
             </div>
           </div>
@@ -225,22 +260,7 @@ export default function Footer() {
 
       </div>
 
-      {/* Registered Office Address */}
-      <div className="border-t border-[#EFE6DD]/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
 
-          <div className="max-w-3xl">
-            <div className="hx-eyebrow text-[#C89D66] mb-3">
-              Registered Office
-            </div>
-
-            <p className="text-xs text-[#EFE6DD]/55 leading-relaxed">
-              1295 First Floor, Pan Mandi, Sadar Bazar, Delhi — 110006
-            </p>
-          </div>
-
-        </div>
-      </div>
 
       {/* Bottom Footer */}
       <div className="border-t border-[#EFE6DD]/10">
