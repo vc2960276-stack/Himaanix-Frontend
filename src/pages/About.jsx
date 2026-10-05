@@ -200,6 +200,49 @@ export default function About() {
                 </div>
             </section>
 
+{/* Corporate Information */}
+<div>
+  <p>
+    <span className="text-[#EFE6DD]/80">CIN:</span>{" "}
+    U47711DC2026PTC473946
+  </p>
+
+  <p>
+    <span className="text-[#EFE6DD]/80">
+      Directors:
+    </span>{" "}
+    Aman & Himanshu
+  </p>
+
+  <p>
+    <span className="text-[#EFE6DD]/80">
+      Grievance Officer:
+    </span>{" "}
+    Premjeet
+  </p>
+
+  <p>
+    <span className="text-[#EFE6DD]/80">
+      Grievance Officer Email:
+    </span>{" "}
+    himaanixtrading@gmail.com
+  </p>
+
+  <p>
+    <span className="text-[#EFE6DD]/80">
+      Grievance Officer Mobile:
+    </span>{" "}
+    +91 9650300157
+  </p>
+
+  <p>
+    <span className="text-[#EFE6DD]/80">
+      Contact & Support:
+    </span>{" "}
+    +91 8958975608
+  </p>
+</div>
+
             {/* CTA */}
             <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
                 <div className="bg-[#1A1110] text-[#FDFBF7] p-10 md:p-16 text-center">
