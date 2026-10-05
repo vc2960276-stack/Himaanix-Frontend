@@ -94,9 +94,15 @@ export default function Footer() {
 
                 <p>
                   <span className="text-[#EFE6DD]/80">
-                    Contact & Support:
+                    Contact & Support Mobile:
                   </span>{" "}
                   +91 8958975608
+                </p>
+                <p>
+                  <span className="text-[#EFE6DD]/80">
+                    Contact & Support Email:
+                  </span>{" "}
+                  himaanixtrading@gmail.com
                 </p>
               </div>
 
