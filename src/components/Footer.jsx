@@ -71,12 +71,26 @@ export default function Footer() {
                   U47711DC2026PTC473946
                 </p>
 
-                <p>
-                  <span className="text-[#EFE6DD]/80">
-                    Grievance Officer:
-                  </span>{" "}
-                  himaanixtrading@gmail.com
-                </p>
+               <p>
+  <span className="text-[#EFE6DD]/80">
+    Grievance Officer:
+  </span>{" "}
+  Premjeet
+</p>
+
+<p>
+  <span className="text-[#EFE6DD]/80">
+    Grievance Officer Email:
+  </span>{" "}
+  himaanixtrading@gmail.com
+</p>
+
+<p>
+  <span className="text-[#EFE6DD]/80">
+    Grievance Officer Mobile:
+  </span>{" "}
+  +91 9650300157
+</p>
 
                 <p>
                   <span className="text-[#EFE6DD]/80">
