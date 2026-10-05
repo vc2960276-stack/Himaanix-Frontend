@@ -30,13 +30,6 @@ const CONTACT_CARDS = [
         href: "tel:+918958975608",
     },
     {
-        icon: MessageCircle,
-        label: "WhatsApp",
-        value: "+91 8958975608",
-        sub: "Fastest response",
-        href: "https://wa.me/918958975608",
-    },
-    {
         icon: MapPin,
         label: "Visit Office",
         value: "Delhi, New Delhi, India",
