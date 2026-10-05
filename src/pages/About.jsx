@@ -154,6 +154,66 @@ export default function About() {
                 </div>
             </section>
 
+{/* Directors */}
+<section className="bg-[#F5F0EB] py-20">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div className="text-center mb-12">
+      <div className="hx-eyebrow mb-3 text-[#C89D66]">
+        Leadership
+      </div>
+
+      <h2 className="font-serif text-3xl md:text-5xl mb-4">
+        Our Directors
+      </h2>
+
+      <p className="text-[#5C524C] max-w-2xl mx-auto leading-relaxed">
+        HIMAANIX is guided by a leadership team committed to building
+        a thoughtful, trusted, and enduring fashion brand.
+      </p>
+    </div>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+
+      {/* Aman */}
+      <div className="bg-[#FDFBF7] border border-[#2B1B17]/10 p-8 md:p-10 text-center hover:border-[#1A1110] transition-colors">
+        <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-[#1A1110] text-[#C89D66] flex items-center justify-center">
+          <span className="font-serif text-2xl">
+            A
+          </span>
+        </div>
+
+        <h3 className="font-serif text-2xl mb-2">
+          Aman
+        </h3>
+
+        <div className="hx-eyebrow text-[#C89D66]">
+          Director
+        </div>
+      </div>
+
+      {/* Himanshu */}
+      <div className="bg-[#FDFBF7] border border-[#2B1B17]/10 p-8 md:p-10 text-center hover:border-[#1A1110] transition-colors">
+        <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-[#1A1110] text-[#C89D66] flex items-center justify-center">
+          <span className="font-serif text-2xl">
+            H
+          </span>
+        </div>
+
+        <h3 className="font-serif text-2xl mb-2">
+          Himanshu
+        </h3>
+
+        <div className="hx-eyebrow text-[#C89D66]">
+          Director
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
             {/* Timeline */}
             <section className="bg-[#EFE6DD] py-20">
                 <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -200,48 +260,8 @@ export default function About() {
                 </div>
             </section>
 
-{/* Corporate Information */}
-<div>
-  <p>
-    <span className="text-[#EFE6DD]/80">CIN:</span>{" "}
-    U47711DC2026PTC473946
-  </p>
 
-  <p>
-    <span className="text-[#EFE6DD]/80">
-      Directors:
-    </span>{" "}
-    Aman & Himanshu
-  </p>
-
-  <p>
-    <span className="text-[#EFE6DD]/80">
-      Grievance Officer:
-    </span>{" "}
-    Premjeet
-  </p>
-
-  <p>
-    <span className="text-[#EFE6DD]/80">
-      Grievance Officer Email:
-    </span>{" "}
-    himaanixtrading@gmail.com
-  </p>
-
-  <p>
-    <span className="text-[#EFE6DD]/80">
-      Grievance Officer Mobile:
-    </span>{" "}
-    +91 9650300157
-  </p>
-
-  <p>
-    <span className="text-[#EFE6DD]/80">
-      Contact & Support:
-    </span>{" "}
-    +91 8958975608
-  </p>
-</div>
+  
 
             {/* CTA */}
             <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
